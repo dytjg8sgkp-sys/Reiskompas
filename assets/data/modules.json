@@ -17,7 +17,7 @@
   {
     "icon": "🗺️",
     "name": "Dagtrips",
-    "info": "Uitstapjes"
+    "info": "Barcelona"
   },
   {
     "icon": "🏖️",
@@ -27,12 +27,12 @@
   {
     "icon": "🎢",
     "name": "Activiteiten",
-    "info": "PortAventura"
+    "info": "Pretparken"
   },
   {
     "icon": "📅",
     "name": "Planning",
-    "info": "Vakantiedagen"
+    "info": "Dagprogramma"
   },
   {
     "icon": "✅",
@@ -42,6 +42,6 @@
   {
     "icon": "❤️",
     "name": "Favorieten",
-    "info": "Opgeslagen"
+    "info": "Bewaard"
   }
 ]
