@@ -1,5 +1,1 @@
-
-const vertrek=new Date('2026-07-18');
-const dagen=Math.max(0,Math.ceil((vertrek-new Date())/86400000));
-const c=document.getElementById('countdown');
-if(c)c.textContent=`Nog ${dagen} dagen tot vertrek`;
+const v=new Date('2026-07-18');const d=Math.max(0,Math.ceil((v-new Date())/86400000));let e=document.getElementById('count');if(e)e.textContent='Nog '+d+' dagen tot vertrek';
