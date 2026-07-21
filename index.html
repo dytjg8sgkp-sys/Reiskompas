@@ -1,34 +1,56 @@
-<!doctype html><html lang='nl'><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas v99</title>
-<link rel="stylesheet" href="css/style.css">
-</head><body>
-<header><h1>🏕️ ReisKompas v99</h1><p>Campingkaart HD voorbereid</p></header>
+<!doctype html>
+<html lang='nl'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>ReisKompas v100</title>
+<link rel='stylesheet' href='css/style.css'>
+</head>
+<body>
+<header>
+<h1>🏕️ ReisKompas v100</h1>
+<p>Mijlpaalversie</p>
+</header>
+
+<div class="grid">
+<div class="card">
+<h2>🗺️ Interactieve kaart (voorbereiding)</h2>
+<p>De HD-campingkaart vormt nu de basis voor de interactieve kaart.</p>
+<a class="btn" href="docs/Campingkaart_HD.pdf" target="_blank">Open HD-kaart</a>
+</div>
 
 <div class="card">
-<h2>Nieuwe campingkaart</h2>
-<p>Deze versie gebruikt de hogere resolutie campingplattegrond als basis voor de toekomstige interactieve kaart.</p>
-
-<div class="notice">
-<b>Status</b><br>
-✓ Hoge resolutie kaart toegevoegd<br>
-✓ Voorbereid voor zoom & hotspots<br>
-⏳ Interactieve markeringen volgen in v100+
-</div>
-
-<p><a class="btn" href="docs/Plattegrond_HR_Playa_Montroig.pdf" target="_blank">
-🗺️ Open HD campingplattegrond
-</a></p>
-
-<h3>Geplande hotspots</h3>
+<h2>📍 Hotspots</h2>
 <ul>
-<li>📍 Receptie</li>
-<li>🏊 Garden Pool</li>
-<li>💦 Splash Pool</li>
-<li>🍽️ Restaurants</li>
-<li>🚿 Sanitair</li>
-<li>🏖️ Strandopgangen</li>
-<li>⭐ Eigen kampeerplaats</li>
+<li>Receptie</li>
+<li>Garden Pool</li>
+<li>Splash Pool</li>
+<li>Restaurants</li>
+<li>Supermarkt</li>
+<li>Sportcentrum</li>
+<li>Strand</li>
+<li>Sanitair</li>
 </ul>
 </div>
+
+<div class="card">
+<h2>⭐ Eigen kampeerplaats</h2>
+<input id="place" placeholder="Bijv. 145">
+<button onclick="save()">Opslaan</button>
+<p id="status"></p>
+</div>
+
+<div class="card">
+<h2>🚀 Roadmap v101+</h2>
+<ul>
+<li>Zoom & pan op de kaart</li>
+<li>Klikbare hotspots</li>
+<li>Wandelroutes</li>
+<li>Offline kaartcache</li>
+<li>Navigatie vanaf eigen plaats</li>
+</ul>
+</div>
+</div>
+
+<script src="js/app.js"></script>
 </body></html>
