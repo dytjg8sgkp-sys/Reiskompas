@@ -1,5 +1,12 @@
 {
-  "hotel": "La Jonquera (nog te kiezen)",
-  "camping": "Playa Montroig Camping Resort",
-  "etappe": "Nederland \u2192 La Jonquera \u2192 Playa Montroig"
+  "start": "Thuis",
+  "tussenstop": "La Jonquera",
+  "eind": "Playa Montroig Camping Resort",
+  "hotel": "Nog te bepalen",
+  "stalling": "Nog toe te voegen",
+  "tankstops": [
+    "Noord-Frankrijk",
+    "Clermont-Ferrand",
+    "Omgeving Béziers"
+  ]
 }
