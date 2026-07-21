@@ -1,17 +1,19 @@
 
-async function loadData(file,target,kind){
- const el=document.getElementById(target); if(!el) return;
- const data=await (await fetch('../assets/data/'+file)).json();
+async function loadPlanning(){
+ const el=document.getElementById('planning');
+ if(!el)return;
+ const data=await (await fetch('../assets/data/planning.json')).json();
  el.innerHTML='';
- data.forEach(i=>{
-   let title=i.naam;
-   let sub=i.plaats||i.type||'';
-   let tip=i.tip||'';
-   el.innerHTML+=`<div class="card"><h3>${title}</h3><p>${sub}</p><p>${tip}</p>
-   <a class="btn" target="_blank" href="https://maps.apple.com/?q=${encodeURIComponent(title)}">Apple Maps</a></div>`;
+ data.forEach(item=>{
+   el.innerHTML+=`<div class="card"><strong>${item.dag}</strong><br>${item.activiteit}</div>`;
  });
 }
 window.addEventListener('load',()=>{
- loadData('stranden.json','beaches');
- loadData('activiteiten.json','activities');
+ const c=document.getElementById('countdown');
+ if(c){
+   const vertrek=new Date('2026-07-01T08:00:00');
+   const dagen=Math.max(0,Math.floor((vertrek-new Date())/86400000));
+   c.textContent=`Nog ${dagen} dagen tot vertrek`;
+ }
+ loadPlanning();
 });

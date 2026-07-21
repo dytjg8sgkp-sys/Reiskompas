@@ -1,0 +1,22 @@
+[
+  {
+    "dag": "Dag 1",
+    "activiteit": "Rit naar La Jonquera"
+  },
+  {
+    "dag": "Dag 2",
+    "activiteit": "Aankomst Playa Montroig"
+  },
+  {
+    "dag": "Dag 3",
+    "activiteit": "Zwembad & strand"
+  },
+  {
+    "dag": "Dag 4",
+    "activiteit": "Cambrils"
+  },
+  {
+    "dag": "Dag 5",
+    "activiteit": "Tarragona"
+  }
+]
