@@ -1,43 +1,53 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas v90</title>
+<title>ReisKompas v91</title>
 <link rel='manifest' href='manifest.json'>
 <link rel='stylesheet' href='css/style.css'>
 </head><body>
-<header><h1>ReisKompas v90</h1><div id='count'></div></header>
+<header><h1>ReisKompas v91</h1><div id='count'></div></header>
 <nav>
-<button onclick="show('dash')">Dashboard</button>
-<button onclick="show('route')">Route</button>
-<button onclick="show('links')">Kaarten</button>
-<button onclick="show('pack')">Paklijst</button>
-<button onclick="show('docs')">Docs</button>
+<button onclick="show('home')">Home</button>
+<button onclick="show('planner')">Planner</button>
+<button onclick="show('camp')">Camping</button>
+<button onclick="show('docs')">Documenten</button>
+<button onclick="show('settings')">Instellingen</button>
 </nav>
 <main>
-<section id="dash">
-<div class="card"><h2>Reisstatus</h2><progress id="prog" max="8"></progress><p id="progTxt"></p></div>
-<div class="card"><b>Camping Playa Montroig</b><br>2 t/m 16 augustus 2026</div>
+<section id="home">
+<div class="card"><h2>Vakantieoverzicht</h2><p>Camping Playa Montroig Resort • 2–16 augustus 2026</p></div>
 </section>
 
-<section id="route" hidden>
-<div class="card"><h2>Route</h2><table id="rt"></table></div>
+<section id="planner" hidden>
+<h2>14-daagse planner</h2>
+<div id="days"></div>
 </section>
 
-<section id="links" hidden>
-<div class="card"><h2>Snelle kaarten</h2>
+<section id="camp" hidden>
+<div class="card">
+<h2>Camping</h2>
 <ul>
-<li><a target="_blank" href="https://maps.apple.com/?q=La+Jonquera">Hotelomgeving La Jonquera</a></li>
-<li><a target="_blank" href="https://maps.apple.com/?q=Camping+Playa+Montroig">Camping Playa Montroig</a></li>
-</ul></div>
-</section>
-
-<section id="pack" hidden>
-<div class="card"><h2>Paklijst</h2><div id="items"></div></div>
+<li>Premium Deluxe</li>
+<li>Zwembaden</li>
+<li>Restaurants</li>
+<li>Supermarkt</li>
+<li>Direct aan zee</li>
+</ul>
+<p><em>Plaatsnummer kan later worden toegevoegd.</em></p>
+</div>
 </section>
 
 <section id="docs" hidden>
-<div class="card"><h2>Documenten</h2>
-<p>Voeg hier camping-, hotel- en verzekeringsdocumenten toe.</p>
-</div></section>
+<div class="card">
+<h2>Documentencentrum</h2>
+<p>Map <code>docs/</code> is voorbereid voor PDF's zoals camping-, hotel- en verzekeringsdocumenten.</p>
+</div>
+</section>
+
+<section id="settings" hidden>
+<div class="card">
+<label><input type="checkbox" id="dark"> Donkere modus</label>
+</div>
+</section>
 </main>
 <script src="js/app.js"></script>
 </body></html>
