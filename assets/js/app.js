@@ -1,19 +1,26 @@
 
-async function loadPlanning(){
- const el=document.getElementById('planning');
- if(!el)return;
- const data=await (await fetch('../assets/data/planning.json')).json();
- el.innerHTML='';
- data.forEach(item=>{
-   el.innerHTML+=`<div class="card"><strong>${item.dag}</strong><br>${item.activiteit}</div>`;
+async function loadChecklist(){
+ const box=document.getElementById('checklist');
+ if(!box) return;
+ const items=await (await fetch('../assets/data/checklist.json')).json();
+ const saved=JSON.parse(localStorage.getItem('rk_checklist')||'{}');
+ box.innerHTML='';
+ items.forEach((item,i)=>{
+   const id='c'+i;
+   box.innerHTML+=`<label><input id="${id}" type="checkbox" ${saved[item]?'checked':''}
+   onchange="toggleItem('${item}',this.checked)"> ${item}</label>`;
  });
 }
-window.addEventListener('load',()=>{
- const c=document.getElementById('countdown');
- if(c){
-   const vertrek=new Date('2026-07-01T08:00:00');
-   const dagen=Math.max(0,Math.floor((vertrek-new Date())/86400000));
-   c.textContent=`Nog ${dagen} dagen tot vertrek`;
- }
- loadPlanning();
-});
+function toggleItem(name,val){
+ const saved=JSON.parse(localStorage.getItem('rk_checklist')||'{}');
+ saved[name]=val;
+ localStorage.setItem('rk_checklist',JSON.stringify(saved));
+}
+function loadFavorites(){
+ const el=document.getElementById('favorites');
+ if(!el) return;
+ const fav=JSON.parse(localStorage.getItem('favorites')||'[]');
+ if(!fav.length){el.innerHTML='<div class="card">Nog geen favorieten opgeslagen.</div>';return;}
+ el.innerHTML=fav.map(f=>`<div class="card">❤️ ${f}</div>`).join('');
+}
+window.addEventListener('load',()=>{loadChecklist();loadFavorites();});
