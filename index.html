@@ -1,74 +1,40 @@
-
-<!doctype html>
-<html lang="nl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>ReisKompas v64</title>
-</head>
-<body>
-<header>
-<h1>🇪🇸 ReisKompas v64</h1>
-<p>Budgetbeheer met bewerken en reisdagen</p>
-</header>
-
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='stylesheet' href='assets/css/style.css'>
+<title>ReisKompas v66</title></head><body>
+<header><h1>🇪🇸 ReisKompas v66</h1><p>Reisvoorbereiding zonder budgetmodule</p></header>
 <main>
-
-<div class="card">
-<h2>🎯 Totaalbudget</h2>
-<input id="budget" type="number" placeholder="Budget">
-<button onclick="setBudget()">Opslaan</button>
+<div class='grid'>
+<div class='card'>
+<h2>📦 Paklijst</h2>
+<p id='progress'></p>
+<ul id='packing'></ul>
 </div>
-
-<div class="card">
-<h2>➕ Uitgave</h2>
-
-<select id="day">
-<option>Reisdag 1</option>
-<option>Reisdag 2</option>
-<option>Camping</option>
-<option>Barcelona</option>
-<option>PortAventura</option>
-<option>Terugreis</option>
-</select>
-
-<select id="category">
-<option>Brandstof</option>
-<option>Tol</option>
-<option>Camping</option>
-<option>Boodschappen</option>
-<option>Restaurant</option>
-<option>Activiteit</option>
-</select>
-
-<input id="description" placeholder="Omschrijving">
-<input id="amountInput" type="number" step="0.01" placeholder="Bedrag">
-<button id="saveBtn" onclick="addOrUpdate()">Toevoegen</button>
+<div class='card'>
+<h2>🚗 Route</h2>
+<ul>
+<li>Nederland → La Jonquera</li>
+<li>Hotelovernachting</li>
+<li>La Jonquera → Playa Montroig</li>
+</ul>
 </div>
-
-<div class="card">
-<h2>💶 Uitgaven</h2>
-
-<table>
-<thead>
-<tr>
-<th>Dag</th>
-<th>Categorie</th>
-<th>Omschrijving</th>
-<th>Bedrag</th>
-<th>Acties</th>
-</tr>
-</thead>
-<tbody id="rows"></tbody>
-</table>
-
-<h3>Uitgegeven: <span id="spent">€ 0.00</span></h3>
-<h3>Resterend: <span id="left">€ 0.00</span></h3>
-
+<div class='card'>
+<h2>🏕️ Camping</h2>
+<ul>
+<li>Inchecken</li>
+<li>Plaatsnummer</li>
+<li>Zwembaden</li>
+<li>Restaurants</li>
+</ul>
 </div>
-
-<script src="assets/js/app.js"></script>
-</main>
-</body>
-</html>
+<div class='card'>
+<h2>📄 Reserveringen</h2>
+<ul>
+<li>Hotel La Jonquera</li>
+<li>Camping Playa Montroig</li>
+<li>Ruimte voor vouchers</li>
+</ul>
+</div>
+</div>
+<script src='assets/js/app.js'></script>
+</main></body></html>
