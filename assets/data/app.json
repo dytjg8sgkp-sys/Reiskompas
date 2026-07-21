@@ -1,30 +1,32 @@
 {
-  "restaurants": [
-    "Can Salvador",
-    "Friends Restaurant",
-    "Casa Pepita"
+  "packing": [
+    "Paspoorten",
+    "Rijbewijs",
+    "Caravanpapieren",
+    "Kentekenbewijs",
+    "EHBO",
+    "Zwemkleding",
+    "Laders",
+    "Koelkast vullen"
   ],
-  "beaches": [
-    "Playa Montroig",
-    "Playa Cristal",
-    "Platja de la Pixerota"
-  ],
-  "days": [
+  "stops": [
     {
-      "day": "Dag 1",
-      "plan": "Aankomst en opbouwen"
+      "naam": "Vertrek Nederland",
+      "afstand": "0 km"
     },
     {
-      "day": "Dag 2",
-      "plan": "Strand"
+      "naam": "Hotel La Jonquera",
+      "afstand": "±1350 km"
     },
     {
-      "day": "Dag 3",
-      "plan": "Barcelona"
-    },
-    {
-      "day": "Dag 4",
-      "plan": "PortAventura"
+      "naam": "Camping Playa Montroig",
+      "afstand": "±1550 km"
     }
+  ],
+  "favorites": [
+    "Playa Cristal",
+    "Can Salvador",
+    "PortAventura",
+    "Barcelona"
   ]
 }

@@ -1,10 +1,8 @@
 
 body{margin:0;font-family:Arial,sans-serif;background:#0f172a;color:#fff}
-header{background:linear-gradient(135deg,#2563eb,#06b6d4);padding:20px}
+header{padding:20px;background:linear-gradient(135deg,#2563eb,#14b8a6)}
 main{max-width:1200px;margin:auto;padding:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
-.card{background:#1e293b;padding:16px;border-radius:12px}
-table{width:100%;border-collapse:collapse}
-td{padding:6px;border-bottom:1px solid #334155}
-.progress{height:12px;background:#334155;border-radius:6px;overflow:hidden}
-.bar{height:100%;width:35%;background:#22c55e}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{background:#1e293b;border-radius:12px;padding:16px}
+.check{display:block;margin:6px 0}
+button{padding:8px 12px}
