@@ -1,8 +1,8 @@
 
 async function init(){
  const d=await (await fetch('assets/data/app.json')).json();
- summary.innerHTML=`<span class='badge'>${d.trip.camping}</span><p><strong>Aankomst:</strong> ${d.trip.arrival}<br><strong>Vertrek:</strong> ${d.trip.departure}<br><strong>Hotel onderweg:</strong> ${d.trip.hotel}<br><strong>Referentie:</strong> ${d.trip.reference}</p>`;
- planning.innerHTML=d.days.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td></tr>`).join('');
- documents.innerHTML=d.docs.map(x=>'<li>'+x+'</li>').join('');
+ summary.innerHTML=`<strong>${d.trip.camping}</strong><br>${d.trip.arrival} t/m ${d.trip.departure}<br>Overnachting: ${d.trip.hotel}`;
+ route.innerHTML=d.route.map(r=>`<div class="route-step">${r[0]} ${r[1]}</div>`).join('');
+ checks.innerHTML=d.checklist.map(c=>`<label><input type="checkbox"> ${c}</label><br>`).join('');
 }
 window.onload=init;
