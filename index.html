@@ -1,64 +1,29 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas 2.1</title>
-<link rel='stylesheet' href='css/style.css'>
-</head><body>
-<header><h1>🏕️ ReisKompas 2.1</h1><p>Interactieve Campingmodule</p></header>
-
-<nav>
-<button data-page="kaart">Kaart</button>
-<button data-page="voorzieningen">Voorzieningen</button>
-<button data-page="planning">Planning</button>
-<button data-page="info">Info</button>
-</nav>
-
-<section id="kaart" class="page">
-<div class="card">
-<h2>Campingkaart</h2>
-<p>Gebruik de HD-plattegrond als referentie. De kaart kan later worden vervangen door een interactieve afbeelding met pinch-to-zoom.</p>
-<a class="btn" href="docs/Campingkaart_HD.pdf" target="_blank">Open campingkaart</a>
-<h3>Eigen kampeerplaats</h3>
-<input id="place" placeholder="Bijv. 145">
-<button id="save">Opslaan</button>
-<p id="saved"></p>
+<title>ReisKompas 2.2</title>
+<link rel='stylesheet' href='css/style.css'></head>
+<body>
+<header><h1>🏕️ ReisKompas 2.2</h1><p>Camping Navigator</p></header>
+<div class='layout'>
+<aside class='panel'>
+<h2>Navigatie</h2>
+<input id='place' placeholder='Kampeerplaats'>
+<button id='save'>Kampeerplaats opslaan</button>
+<h3>Bestemmingen</h3>
+<div class='list'>
+<button data-d='Receptie'>📍 Receptie</button>
+<button data-d='Garden Pool'>🏊 Garden Pool</button>
+<button data-d='Splash Pool'>💦 Splash Pool</button>
+<button data-d='Supermarkt'>🛒 Supermarkt</button>
+<button data-d='La Terrassa'>🍽️ La Terrassa</button>
+<button data-d='Strand'>🏖️ Strand</button>
 </div>
-</section>
-
-<section id="voorzieningen" class="page" hidden>
-<div class="card">
-<h2>Voorzieningen</h2>
-<div class="grid">
-<button>🏊 Garden Pool</button>
-<button>💦 Splash Pool</button>
-<button>🍽️ La Terrassa</button>
-<button>🍕 Espai Grill</button>
-<button>🛒 Supermarkt</button>
-<button>🏖️ Strand</button>
-<button>🚿 Sanitair</button>
-<button>🏥 Medische post</button>
+<p><b>Bestemming:</b> <span id='dest'>-</span></p>
+</aside>
+<main class='viewer'>
+<iframe src='docs/Campingkaart_HD.pdf'></iframe>
+<p class='hint'>Volgende stap: vervang de PDF door een hoge resolutie afbeelding voor pinch-to-zoom en klikbare hotspots.</p>
+</main>
 </div>
-</div>
-</section>
-
-<section id="planning" class="page" hidden>
-<div class="card">
-<h2>Dagplanning</h2>
-<textarea id="notes" placeholder="Plannen voor vandaag..."></textarea>
-</div>
-</section>
-
-<section id="info" class="page" hidden>
-<div class="card">
-<h2>Roadmap</h2>
-<ul>
-<li>Interactieve HD-kaart</li>
-<li>Klikbare hotspots</li>
-<li>Wandelroutes vanaf kampeerplaats</li>
-<li>Offline kaart</li>
-<li>Restaurants gekoppeld aan de kaart</li>
-</ul>
-</div>
-</section>
-
-<script src="js/app.js"></script>
+<script src='js/app.js'></script>
 </body></html>
