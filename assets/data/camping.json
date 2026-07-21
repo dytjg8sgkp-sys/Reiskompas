@@ -1,20 +1,28 @@
 {
-  "naam": "Playa Montroig Camping Resort",
-  "faciliteiten": [
+  "voorzieningen": [
+    "Receptie",
     "Zwembaden",
-    "Supermarkt",
     "Restaurants",
-    "Strand",
-    "Animatie"
+    "Supermarkt",
+    "Animatie",
+    "Sanitair"
   ],
-  "restaurants": [
-    "La Terrassa",
-    "Espai Grill",
-    "Beach Club"
-  ],
-  "dagtrips": [
-    "Cambrils",
-    "Tarragona",
-    "Barcelona"
+  "uitstapjes": [
+    {
+      "naam": "Barcelona",
+      "maps": "https://maps.apple.com/?q=Barcelona"
+    },
+    {
+      "naam": "Cambrils",
+      "maps": "https://maps.apple.com/?q=Cambrils"
+    },
+    {
+      "naam": "Tarragona",
+      "maps": "https://maps.apple.com/?q=Tarragona"
+    },
+    {
+      "naam": "PortAventura",
+      "maps": "https://maps.apple.com/?q=PortAventura"
+    }
   ]
 }

@@ -1,8 +1,9 @@
 
 body{margin:0;font-family:Arial,sans-serif;background:#0f172a;color:#fff}
-header{background:linear-gradient(135deg,#2563eb,#06b6d4);padding:20px}
+header{background:linear-gradient(135deg,#2563eb,#0ea5e9);padding:20px}
 main{max-width:1200px;margin:auto;padding:20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 .card{background:#1e293b;border-radius:12px;padding:16px}
-button{padding:8px 12px}
-.done{text-decoration:line-through;opacity:.6}
+details{margin:8px 0}
+summary{cursor:pointer;font-weight:bold}
+a{color:#93c5fd;text-decoration:none}

@@ -1,11 +1,67 @@
-<!doctype html><html lang='nl'><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v71</title></head>
-<body><header><h1>🇪🇸 ReisKompas v71</h1><p>Interactieve dagplanner</p></header>
-<main><div class='grid'>
-<div class='card'><h2>📅 Dagplanning</h2><div id='days'></div></div>
-<div class='card'><h2>🍽️ Restaurants</h2><ul id='restaurants'></ul></div>
-<div class='card'><h2>📍 Bezienswaardigheden</h2><ul id='pois'></ul></div>
-<div class='card'><h2>🏕️ Camping</h2><p>Voorbereid voor interactieve plattegrond en plaatsinformatie.</p></div>
+
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>ReisKompas v72</title>
+</head>
+<body>
+<header>
+<h1>🇪🇸 ReisKompas v72</h1>
+<p>Campinginformatie en uitstapjes</p>
+</header>
+
+<main>
+<div class="grid">
+
+<div class="card">
+<h2>🏕️ Camping Playa Montroig</h2>
+<details open>
+<summary>Voorzieningen</summary>
+<ul id="facilities"></ul>
+</details>
+
+<details>
+<summary>Inchecken</summary>
+<p>Ruimte voor reserveringsnummer, aankomsttijd en plaatsnummer.</p>
+</details>
+
+<details>
+<summary>Vertrek</summary>
+<p>Checklist voor uitchecken en vertrek.</p>
+</details>
 </div>
-<script src='assets/js/app.js'></script></main></body></html>
+
+<div class="card">
+<h2>📍 Uitstapjes</h2>
+<ul id="trips"></ul>
+</div>
+
+<div class="card">
+<h2>📄 Documenten</h2>
+<ul>
+<li>Hotelreservering</li>
+<li>Campingreservering</li>
+<li>Caravanpapieren</li>
+<li>Verzekeringsinformatie</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>📞 Belangrijke gegevens</h2>
+<ul>
+<li>112 (Europees alarmnummer)</li>
+<li>Pechhulp</li>
+<li>Zorgverzekering</li>
+<li>Contact camping (later toe te voegen)</li>
+</ul>
+</div>
+
+</div>
+
+<script src="assets/js/app.js"></script>
+</main>
+</body>
+</html>
