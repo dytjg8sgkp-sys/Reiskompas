@@ -1,8 +1,9 @@
 
 body{margin:0;font-family:Arial,sans-serif;background:#0f172a;color:#fff}
-header{background:#2563eb;padding:20px}
+header{background:linear-gradient(135deg,#2563eb,#0ea5e9);padding:22px}
 main{max-width:1200px;margin:auto;padding:20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 .card{background:#1e293b;border-radius:12px;padding:16px}
-a{color:#93c5fd;text-decoration:none}
+input{width:100%;padding:10px;border-radius:8px;border:none;margin-bottom:14px}
 ul{padding-left:20px}
+.hidden{display:none}
