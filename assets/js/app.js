@@ -1,13 +1,4 @@
-
-const vertrek=new Date('2026-07-01T08:00:00');
-const d=Math.max(0,Math.floor((vertrek-new Date())/86400000));
-const el=document.getElementById('count');
-if(el) el.textContent='Nog '+d+' dagen';
-async function loadTrips(){
- const target=document.getElementById('triplist');
- if(!target) return;
- const r=await fetch('../assets/data/dagtrips.json');
- const data=await r.json();
- target.innerHTML=data.map(x=>`<li>${x.naam} - ${x.afstand}</li>`).join('');
-}
-window.addEventListener('load',loadTrips);
+if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js').catch(()=>{});}
+const c=document.getElementById('count');
+if(c){const d=Math.floor((new Date('2026-07-01')-new Date())/86400000);c.textContent='Nog '+Math.max(d,0)+' dagen';}
+function saveFav(name){let f=JSON.parse(localStorage.getItem('fav')||'[]');if(!f.includes(name))f.push(name);localStorage.setItem('fav',JSON.stringify(f));alert('Opgeslagen');}
