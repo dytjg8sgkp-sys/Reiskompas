@@ -1,8 +1,10 @@
 
-document.addEventListener('DOMContentLoaded',async()=>{
-const vertrek=new Date('2026-07-03T08:00:00');
-days.textContent=Math.max(0,Math.ceil((vertrek-new Date())/86400000));
-const data=await (await fetch('assets/data/modules.json')).json();
-moduleCount.textContent=data.length;
-mods.innerHTML=data.map(m=>`<a class="tile"><h3>${m.icon} ${m.name}</h3><small>${m.desc}</small></a>`).join('');
-});
+async function init(){
+ const m=await (await fetch('assets/data/modules.json')).json();
+ modules.innerHTML=m.map(x=>`<div class='card'><h3>${x.icon} ${x.name}</h3></div>`).join('');
+ notes.value=localStorage.getItem('notes')||'';
+ notes.oninput=()=>localStorage.setItem('notes',notes.value);
+ budget.value=localStorage.getItem('budget')||'';
+ budget.oninput=()=>localStorage.setItem('budget',budget.value);
+}
+document.addEventListener('DOMContentLoaded',init);

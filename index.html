@@ -1,13 +1,33 @@
-<!doctype html><html><head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas v30</title></head>
-<body style="font-family:Arial;background:#08111f;color:white">
-<h1>🇪🇸 ReisKompas v30</h1>
-<p>PWA-fundament (basisrelease)</p>
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='manifest' href='manifest.json'>
+<link rel='stylesheet' href='assets/css/style.css'>
+<title>ReisKompas v40</title></head><body>
+<header><h1>🇪🇸 ReisKompas v40</h1><p>Werkende kernmodules</p></header>
+<main>
+<div id='modules' class='grid'></div>
+<div class='grid'>
+<div class='card'>
+<h2>💶 Budget</h2>
+<input id='budget' placeholder='Bijv. €2500 budget'>
+<p>Wordt lokaal opgeslagen.</p>
+</div>
+<div class='card'>
+<h2>📝 Reisnotities</h2>
+<textarea id='notes' rows='6' placeholder='Notities...'></textarea>
+</div>
+<div class='card'>
+<h2>📄 Reserveringen</h2>
 <ul>
-<li>Manifest voorbereid</li>
-<li>Service Worker voorbereid</li>
-<li>Offline architectuur</li>
-<li>Lokale opslag voor notities</li>
+<li>Hotel La Jonquera</li>
+<li>Camping Playa Montroig</li>
 </ul>
-</body></html>
+</div>
+<div class='card'>
+<h2>🗺️ Route</h2>
+<p>Nederland → La Jonquera → Playa Montroig</p>
+<a class='btn' href='https://maps.apple.com/?q=Playa+Montroig'>Open Apple Maps</a>
+</div>
+</div>
+<script src='assets/js/app.js'></script>
+</main></body></html>

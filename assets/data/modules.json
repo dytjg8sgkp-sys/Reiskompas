@@ -1,52 +1,26 @@
 [
   {
-    "icon": "🚗",
-    "name": "Reis",
-    "desc": "Route & hotels"
-  },
-  {
-    "icon": "🏕️",
-    "name": "Camping",
-    "desc": "Playa Montroig"
-  },
-  {
-    "icon": "🗺️",
-    "name": "Dagtrips",
-    "desc": "Barcelona"
-  },
-  {
-    "icon": "🍽️",
-    "name": "Restaurants",
-    "desc": "Favorieten"
-  },
-  {
-    "icon": "🏖️",
-    "name": "Stranden",
-    "desc": "Costa Dorada"
-  },
-  {
-    "icon": "🎢",
-    "name": "Activiteiten",
-    "desc": "PortAventura"
-  },
-  {
-    "icon": "📅",
-    "name": "Planning",
-    "desc": "Dagprogramma"
-  },
-  {
-    "icon": "✅",
-    "name": "Checklist",
-    "desc": "Vertrek"
-  },
-  {
-    "icon": "❤️",
-    "name": "Favorieten",
-    "desc": "Opgeslagen"
-  },
-  {
-    "icon": "💶",
     "name": "Budget",
-    "desc": "Kosten"
+    "icon": "💶"
+  },
+  {
+    "name": "Planning",
+    "icon": "📅"
+  },
+  {
+    "name": "Reserveringen",
+    "icon": "📄"
+  },
+  {
+    "name": "Route",
+    "icon": "🗺️"
+  },
+  {
+    "name": "Favorieten",
+    "icon": "❤️"
+  },
+  {
+    "name": "Checklist",
+    "icon": "✅"
   }
 ]
