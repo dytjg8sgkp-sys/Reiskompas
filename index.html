@@ -1,33 +1,37 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas v101</title>
-<link rel="stylesheet" href="css/style.css"></head><body>
-<header><h1>🏕️ ReisKompas v101</h1><p>Interactieve kaart – prototype</p></header>
+<title>ReisKompas v102</title>
+<link rel='stylesheet' href='css/style.css'>
+</head><body>
+<header><h1>🏕️ ReisKompas v102</h1><p>Camping Navigator 2.0 (prototype)</p></header>
 
-<div class="toolbar">
-<button data-loc="Receptie">Receptie</button>
-<button data-loc="Garden Pool">Garden Pool</button>
-<button data-loc="Splash Pool">Splash Pool</button>
-<button data-loc="Restaurant">Restaurant</button>
-<button data-loc="Strand">Strand</button>
+<div class="layout">
+<div class="panel">
+<h2>Navigator</h2>
+<label>Kampeerplaats</label>
+<input id="plaats" placeholder="Bijv. 145">
+<button onclick="savePlace()">Opslaan</button>
+
+<h3>Hotspots</h3>
+<div class="hotspots">
+<button onclick="setDest('Receptie')">📍 Receptie</button>
+<button onclick="setDest('Garden Pool')">🏊 Garden Pool</button>
+<button onclick="setDest('Splash Pool')">💦 Splash Pool</button>
+<button onclick="setDest('Supermarkt')">🛒 Supermarkt</button>
+<button onclick="setDest('Restaurant')">🍽️ Restaurant</button>
+<button onclick="setDest('Strand')">🏖️ Strand</button>
+</div>
+
+<div class="status">
+<p><b>Kampeerplaats:</b> <span id="saved">Nog niet ingesteld</span></p>
+<p><b>Bestemming:</b> <span id="dest">Nog geen</span></p>
+</div>
 </div>
 
 <div class="viewer">
-<iframe src="docs/Campingkaart_HD.pdf" title="Campingkaart"></iframe>
+<iframe src="docs/Campingkaart_HD.pdf"></iframe>
+<p class="note">Prototype: de kaart wordt nog als PDF weergegeven. Voor echte pinch-to-zoom en klikbare hotspots is een hoge resolutie afbeelding of vectorbestand de volgende stap.</p>
 </div>
-
-<div class="card">
-<h2>📍 Geselecteerde locatie</h2>
-<p id="selected">Nog geen locatie gekozen.</p>
-</div>
-
-<div class="card">
-<h2>📝 Ontwikkelstatus</h2>
-<ul>
-<li>✔ HD-kaart geïntegreerd</li>
-<li>✔ Locatieselectie voorbereid</li>
-<li>⏳ Echte klikbare hotspots volgen zodra een afbeelding/vectorkaart beschikbaar is.</li>
-</ul>
 </div>
 
 <script src="js/app.js"></script>
