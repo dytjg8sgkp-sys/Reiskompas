@@ -1,30 +1,11 @@
-<!doctype html><html lang='nl'><head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas v97</title>
-<link rel='stylesheet' href='css/style.css'></head><body>
-<header><h1>ReisKompas v97</h1><div id='cd'></div></header>
-<nav><button onclick="s('dash')">Dashboard</button><button onclick="s('map')">Kaart</button><button onclick="s('fav')">Favorieten</button><button onclick="s('docs')">Docs</button></nav>
-<main>
-<section id='dash'>
-<div class='card'><h2>Vakantie Spanje 2026</h2><p>02-08-2026 t/m 16-08-2026</p></div>
-<div class='card'><b>Widgets</b><ul><li>📄 Documenten</li><li>🏕️ Camping</li><li>🧭 Routes</li><li>☀️ Weer (placeholder)</li></ul></div>
+<!doctype html><html lang='nl'><meta charset='utf-8'>
+<title>ReisKompas v98</title>
+<style>body{font-family:Arial;margin:2rem;background:#eef}section{background:#fff;padding:1rem;border-radius:10px}code{background:#eee;padding:2px 4px}</style>
+<h1>🏕️ ReisKompas v98</h1>
+<section>
+<h2>Status campingkaart</h2>
+<p>De interactieve campingkaart is voorbereid.</p>
+<p><strong>Belangrijk:</strong> De huidige plattegrond is te laag van resolutie voor prettig gebruik op een telefoon. Bij inzoomen worden teksten en plaatsnummers onscherp.</p>
+<p><strong>Advies:</strong> Gebruik voor een volgende versie een originele hoge resolutie afbeelding of vector-PDF.</p>
+<p>Deze stap is noodzakelijk voordat interactieve hotspots en nauwkeurige navigatie worden toegevoegd.</p>
 </section>
-<section id='map' hidden>
-<div class='card'><h2>Campingkaart</h2>
-<p>Open de officiële plattegrond:</p>
-<p><a class='btn' href='docs/Plattegrond_Playa_Montroig.pdf' target='_blank'>🗺️ Plattegrond</a></p>
-<input id='search' placeholder='Zoek voorziening...'>
-<div id='list'></div>
-</div>
-</section>
-<section id='fav' hidden>
-<div class='card'><h2>Favorieten</h2>
-<input id='inp'><button onclick='addFav()'>Toevoegen</button>
-<ul id='favs'></ul></div>
-</section>
-<section id='docs' hidden>
-<div class='card'>
-<a href='docs/Campingreservering_Playa_Montroig.pdf' target='_blank'>📄 Campingreservering</a><br><br>
-<a href='docs/Plattegrond_Playa_Montroig.pdf' target='_blank'>🗺️ Campingplattegrond</a>
-</div>
-</section></main><script src='js/app.js'></script></body></html>
