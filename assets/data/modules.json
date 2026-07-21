@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Reis",
+    "icon": "🚗",
+    "page": "reis.html"
+  },
+  {
+    "name": "Camping",
+    "icon": "🏕️",
+    "page": "camping.html"
+  },
+  {
+    "name": "Dagtrips",
+    "icon": "🗺️",
+    "page": "dagtrips.html"
+  },
+  {
+    "name": "Restaurants",
+    "icon": "🍽️",
+    "page": "restaurants.html"
+  },
+  {
+    "name": "Checklist",
+    "icon": "✅",
+    "page": "checklist.html"
+  }
+]

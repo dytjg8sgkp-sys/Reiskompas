@@ -1,20 +1,13 @@
-<!doctype html><html lang='nl'><head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v13</title></head>
-<body>
-<header><h1>🇪🇸 ReisKompas v13</h1></header>
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='manifest' href='manifest.json'>
+<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v14</title></head>
+<body><header><h1>🇪🇸 ReisKompas v14</h1><p>Geïntegreerd dashboard</p></header>
 <main>
-<input id='search' placeholder='Zoek een onderdeel...' oninput='searchModules()'>
-<div class='card'><button onclick='toggleTheme()'>🌙/☀️ Donkere of lichte modus</button></div>
-<div class='grid'>
-<a class='tile' href='pages/reis.html'>🚗 Reis</a>
-<a class='tile' href='pages/camping.html'>🏕️ Camping</a>
-<a class='tile' href='pages/dagtrips.html'>🗺️ Dagtrips</a>
-<a class='tile' href='pages/restaurants.html'>🍽️ Restaurants</a>
-<a class='tile' href='pages/checklist.html'>✅ Checklist</a>
-<a class='tile' href='pages/favorieten.html'>❤️ Favorieten</a>
-</div>
+<div class='card'><strong>Modules</strong></div>
+<div id='modules' class='grid'></div>
+<div class='card'><button onclick="alert('Offline-cache actief zodra de app eenmaal is bezocht.')">Controleer offline status</button></div>
 </main>
-<nav><a href='index.html'>🏠</a><a href='pages/instellingen.html'>⚙️</a></nav>
+<nav><a href='index.html'>🏠 Home</a><a href='pages/instellingen.html'>⚙️ Instellingen</a></nav>
 <script src='assets/js/app.js'></script>
 </body></html>
