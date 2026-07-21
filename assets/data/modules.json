@@ -10,14 +10,14 @@
     "desc": "Playa Montroig"
   },
   {
-    "icon": "🍽️",
-    "name": "Restaurants",
-    "desc": "Aanraders"
-  },
-  {
     "icon": "🗺️",
     "name": "Dagtrips",
     "desc": "Barcelona"
+  },
+  {
+    "icon": "🍽️",
+    "name": "Restaurants",
+    "desc": "Aanraders"
   },
   {
     "icon": "🏖️",
@@ -32,12 +32,12 @@
   {
     "icon": "📅",
     "name": "Planning",
-    "desc": "Dagplanning"
+    "desc": "Dagprogramma"
   },
   {
     "icon": "✅",
     "name": "Checklist",
-    "desc": "Voor vertrek"
+    "desc": "Vertrek"
   },
   {
     "icon": "❤️",
