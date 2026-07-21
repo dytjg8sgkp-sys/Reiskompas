@@ -1,51 +1,49 @@
-<!doctype html><html lang='nl'><head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas v95</title>
-<link rel='stylesheet' href='css/style.css'></head>
-<body>
-<header><h1>ReisKompas v95</h1><p>Interactieve campingmodule</p></header>
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>ReisKompas v96</title>
+<link rel='stylesheet' href='css/style.css'></head><body>
+<header><h1>🏕 ReisKompas v96</h1><p>Camping Navigator</p></header>
 <nav>
-<button onclick="show('map')">Kaart</button>
-<button onclick="show('fac')">Voorzieningen</button>
-<button onclick="show('docs')">Docs</button>
+<button onclick="show('map')">Navigator</button>
+<button onclick="show('route')">Routes</button>
+<button onclick="show('docs')">Documenten</button>
 </nav>
 <main>
 <section id="map">
 <div class="card">
-<h2>Campingkaart</h2>
-<p>Open de officiële plattegrond en gebruik de snelknoppen hieronder.</p>
-<p><a class="btn" href="docs/Plattegrond_Playa_Montroig.pdf" target="_blank">🗺️ Plattegrond openen</a></p>
-<div class="tiles">
-<button onclick="info('Receptie')">Receptie</button>
-<button onclick="info('Zwembad')">Zwembad</button>
-<button onclick="info('Supermarkt')">Supermarkt</button>
-<button onclick="info('Restaurant')">Restaurant</button>
-<button onclick="info('Sportcentrum')">Sport</button>
-<button onclick="info('Strand')">Strand</button>
+<h2>Camping Navigator</h2>
+<p>Open de officiële plattegrond en gebruik de snelnavigatie.</p>
+<p><a class="btn" href="docs/Plattegrond_Playa_Montroig.pdf" target="_blank">🗺️ Open plattegrond</a></p>
+<div class="grid">
+<button onclick="sel('🏊 Garden Pool')">Garden Pool</button>
+<button onclick="sel('💦 Splash Pool')">Splash Pool</button>
+<button onclick="sel('🍽️ La Terrassa')">La Terrassa</button>
+<button onclick="sel('🛒 Supermarkt')">Supermarkt</button>
+<button onclick="sel('🏖️ Strand')">Strand</button>
+<button onclick="sel('🏥 Medische post')">Medische post</button>
 </div>
-<div id="details" class="info">Selecteer een voorziening.</div>
+<div id="out" class="info">Kies een bestemming.</div>
 </div>
 </section>
 
-<section id="fac" hidden>
+<section id="route" hidden>
 <div class="card">
-<h2>Voorzieningen</h2>
+<h2>Veelgebruikte routes</h2>
 <ul>
-<li>Receptie & medische post</li>
-<li>Supermarkt, bakkerij en viswinkel</li>
-<li>Garden Pool & Splash Pool</li>
-<li>Restaurants, bars en take-away</li>
-<li>Sportcentrum, fitness en minigolf</li>
-<li>Directe strandtoegang</li>
+<li>Receptie → Kampeerplaats (plaatsnummer later)</li>
+<li>Kampeerplaats → Strand</li>
+<li>Kampeerplaats → Supermarkt</li>
+<li>Kampeerplaats → Garden Pool</li>
+<li>Kampeerplaats → Restaurant</li>
 </ul>
 </div>
 </section>
 
 <section id="docs" hidden>
 <div class="card">
-<h2>Documentencentrum</h2>
+<h2>Documenten</h2>
 <p><a href="docs/Campingreservering_Playa_Montroig.pdf" target="_blank">📄 Campingreservering</a></p>
-<p><a href="docs/Plattegrond_Playa_Montroig.pdf" target="_blank">🗺️ Officiële plattegrond</a></p>
+<p><a href="docs/Plattegrond_Playa_Montroig.pdf" target="_blank">🗺️ Campingplattegrond</a></p>
 </div>
 </section>
 </main>
