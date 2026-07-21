@@ -1,26 +1,43 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas v89</title>
+<title>ReisKompas v90</title>
 <link rel='manifest' href='manifest.json'>
 <link rel='stylesheet' href='css/style.css'>
 </head><body>
-<header><h1>ReisKompas v89</h1><div id='count'></div></header>
+<header><h1>ReisKompas v90</h1><div id='count'></div></header>
 <nav>
 <button onclick="show('dash')">Dashboard</button>
-<button onclick="show('cal')">Kalender</button>
 <button onclick="show('route')">Route</button>
-<button onclick="show('loc')">Locaties</button>
-<button onclick="show('docs')">Documenten</button>
+<button onclick="show('links')">Kaarten</button>
+<button onclick="show('pack')">Paklijst</button>
+<button onclick="show('docs')">Docs</button>
 </nav>
 <main>
 <section id="dash">
-<div class="card"><h2>Reisoverzicht</h2><p>Nederland → La Jonquera → Camping Playa Montroig</p></div>
-<div class="card"><b>Verblijf</b><p>2 t/m 16 augustus 2026 • Premium Deluxe</p></div>
+<div class="card"><h2>Reisstatus</h2><progress id="prog" max="8"></progress><p id="progTxt"></p></div>
+<div class="card"><b>Camping Playa Montroig</b><br>2 t/m 16 augustus 2026</div>
 </section>
-<section id="cal" hidden><h2>Vakantiekalender</h2><div id="days"></div></section>
-<section id="route" hidden><div class="card"><h2>Route</h2><ul><li>Dag 1: Nederland → La Jonquera</li><li>Dag 2: La Jonquera → Camping (±2 uur)</li><li>Tank- en ruststops later toe te voegen</li></ul></div></section>
-<section id="loc" hidden><div class="card"><h2>Favoriete locaties</h2><ul><li>Camping Playa Montroig</li><li>Restaurants</li><li>Stranden</li></ul></div></section>
-<section id="docs" hidden><div class="card"><h2>Documentencentrum</h2><p>Plaats hier PDF's van reserveringen, verzekeringen en rijbewijzen.</p></div></section>
+
+<section id="route" hidden>
+<div class="card"><h2>Route</h2><table id="rt"></table></div>
+</section>
+
+<section id="links" hidden>
+<div class="card"><h2>Snelle kaarten</h2>
+<ul>
+<li><a target="_blank" href="https://maps.apple.com/?q=La+Jonquera">Hotelomgeving La Jonquera</a></li>
+<li><a target="_blank" href="https://maps.apple.com/?q=Camping+Playa+Montroig">Camping Playa Montroig</a></li>
+</ul></div>
+</section>
+
+<section id="pack" hidden>
+<div class="card"><h2>Paklijst</h2><div id="items"></div></div>
+</section>
+
+<section id="docs" hidden>
+<div class="card"><h2>Documenten</h2>
+<p>Voeg hier camping-, hotel- en verzekeringsdocumenten toe.</p>
+</div></section>
 </main>
 <script src="js/app.js"></script>
 </body></html>

@@ -1,0 +1,16 @@
+{
+  "legs": [
+    {
+      "from": "Thuis",
+      "to": "La Jonquera",
+      "distance": "ca. 1450 km",
+      "time": "\u00b114-16 uur incl. caravan"
+    },
+    {
+      "from": "La Jonquera",
+      "to": "Camping Playa Montroig",
+      "distance": "ca. 210 km",
+      "time": "\u00b12 uur"
+    }
+  ]
+}
