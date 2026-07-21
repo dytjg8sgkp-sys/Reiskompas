@@ -1,0 +1,30 @@
+{
+  "restaurants": [
+    "Can Salvador",
+    "Friends Restaurant",
+    "Casa Pepita"
+  ],
+  "beaches": [
+    "Playa Montroig",
+    "Playa Cristal",
+    "Platja de la Pixerota"
+  ],
+  "days": [
+    {
+      "day": "Dag 1",
+      "plan": "Aankomst en opbouwen"
+    },
+    {
+      "day": "Dag 2",
+      "plan": "Strand"
+    },
+    {
+      "day": "Dag 3",
+      "plan": "Barcelona"
+    },
+    {
+      "day": "Dag 4",
+      "plan": "PortAventura"
+    }
+  ]
+}

@@ -1,63 +1,22 @@
-<!doctype html>
-<html lang="nl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>ReisKompas v69</title>
-</head>
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='manifest' href='manifest.json'>
+<link rel='stylesheet' href='assets/css/style.css'>
+<title>ReisKompas v70</title></head>
 <body>
-<header>
-<h1>🇪🇸 ReisKompas v69</h1>
-<p>Dashboard met zoeken</p>
-</header>
+<header><h1>🇪🇸 ReisKompas v70</h1><p>Geïntegreerd vakantiedashboard</p></header>
 <main>
-
-<div class="card">
-<h2>🔎 Zoeken</h2>
-<input id="search" placeholder="Zoek een locatie of onderdeel...">
-<ul id="results"></ul>
+<div class='grid'>
+<div class='card'><h2>📅 Reisplanning</h2><table id='itinerary'></table></div>
+<div class='card'><h2>🍽️ Restaurants</h2><ul id='restaurants'></ul></div>
+<div class='card'><h2>🏖️ Stranden</h2><ul id='beaches'></ul></div>
+<div class='card'><h2>🗺️ Camping</h2><p>Plaats voor interactieve plattegrond (volgende versie).</p></div>
+<div class='card'><h2>📄 Documenten</h2><p>Hotel, camping, verzekering en caravan.</p></div>
+<div class='card'><h2>🌤️ Weer</h2><p>Voorbereid voor live weerwidget.</p></div>
 </div>
-
-<div class="grid">
-
-<div class="card">
-<h2>📅 Vandaag</h2>
-<ul>
-<li>Controleer reserveringen</li>
-<li>Bekijk route</li>
-<li>Paklijst nalopen</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>🗺️ Snel naar</h2>
-<ul>
-<li>Camping</li>
-<li>Restaurants</li>
-<li>Stranden</li>
-<li>Noodinformatie</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>🌤️ Weer</h2>
-<p>Ruimte voor live weerwidget.</p>
-</div>
-
-<div class="card">
-<h2>📄 Documenten</h2>
-<ul>
-<li>Hotel</li>
-<li>Camping</li>
-<li>Verzekering</li>
-<li>Caravan</li>
-</ul>
-</div>
-
-</div>
-
-<script src="assets/js/app.js"></script>
 </main>
-</body>
-</html>
+<nav>
+<a href="#">Home</a><a href="#">Planning</a><a href="#">Route</a><a href="#">Camping</a><a href="#">Meer</a>
+</nav>
+<script src='assets/js/app.js'></script>
+</body></html>
