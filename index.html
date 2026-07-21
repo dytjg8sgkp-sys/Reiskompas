@@ -1,24 +1,56 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v15</title></head>
+<link rel='stylesheet' href='assets/css/style.css'>
+<title>ReisKompas v16</title></head>
 <body>
 <header>
-<h1>🇪🇸 ReisKompas v15</h1>
-<span class='badge'>Beta</span>
+<h1>🇪🇸 ReisKompas v16</h1>
+<div class='subtitle'>Nog <strong id='days'>...</strong> dagen tot vertrek</div>
+<div class='progress'><div></div></div>
 </header>
 <main>
-<div class='card'>
-<h3>Projectvoortgang</h3>
-<div class='progress'><div></div></div>
-<p><strong id='count'>0</strong> modules beschikbaar</p>
+<div class='grid'>
+<a class='tile' href='#'><div class='icon'>🚗</div><h3>Reis</h3><small>Route, hotels & caravan</small></a>
+<a class='tile' href='#'><div class='icon'>🏕️</div><h3>Camping</h3><small>Playa Montroig</small></a>
+<a class='tile' href='#'><div class='icon'>🍽️</div><h3>Restaurants</h3><small>Favorieten</small></a>
+<a class='tile' href='#'><div class='icon'>🗺️</div><h3>Dagtrips</h3><small>Barcelona & meer</small></a>
+<a class='tile' href='#'><div class='icon'>🏖️</div><h3>Stranden</h3><small>Costa Dorada</small></a>
+<a class='tile' href='#'><div class='icon'>🎢</div><h3>Activiteiten</h3><small>PortAventura</small></a>
+<a class='tile' href='#'><div class='icon'>📅</div><h3>Planning</h3><small>Dagprogramma</small></a>
+<a class='tile' href='#'><div class='icon'>✅</div><h3>Checklist</h3><small>Voor vertrek</small></a>
 </div>
-<div id='modules' class='grid'></div>
+
+<div class='widget'>
+<h3>📍 Volgende stap</h3>
+<p>Hotel bij La Jonquera reserveren en caravan ophalen.</p>
+</div>
+
+<div class='widget'>
+<h3>🌤️ Playa Montroig</h3>
+<p>Weer-widget (voorbereid voor live gegevens).</p>
+</div>
+
+<div class='widget'>
+<h3>📝 Laatste checklist</h3>
+<ul>
+<li>☑️ Caravan gecontroleerd</li>
+<li>⬜ Paspoorten</li>
+<li>⬜ Tolbadge</li>
+</ul>
+</div>
+
+<div class='widget'>
+<h3>❤️ Favorieten</h3>
+<p>Nog geen favorieten toegevoegd.</p>
+</div>
 </main>
+
 <nav>
-<a href='index.html'>🏠</a>
-<a href='pages/planning.html'>📅</a>
-<a href='pages/checklist.html'>✅</a>
-<a href='pages/favorieten.html'>❤️</a>
+<a href="#">🏠</a>
+<a href="#">🗺️</a>
+<a href="#">📅</a>
+<a href="#">❤️</a>
+<a href="#">⚙️</a>
 </nav>
 <script src='assets/js/app.js'></script>
 </body></html>
