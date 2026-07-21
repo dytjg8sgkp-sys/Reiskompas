@@ -1,10 +1,13 @@
 
-body{margin:0;font-family:-apple-system,sans-serif;background:#0b1220;color:#fff}
-header{padding:22px;background:linear-gradient(135deg,#2563eb,#06b6d4)}
-main{padding:18px 18px 80px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
-.card,.tile{background:#1e293b;border-radius:14px;padding:16px}
-.tile{text-decoration:none;color:#fff;display:block}
+body{margin:0;font-family:-apple-system,Arial,sans-serif;background:#0f172a;color:#fff}
+header{padding:24px;background:linear-gradient(135deg,#2563eb,#0891b2)}
+main{padding:18px 18px 90px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.tile,.card{background:#1e293b;border-radius:16px;padding:16px}
+.tile{text-decoration:none;color:#fff;display:block;transition:.2s}
+.tile:hover{transform:translateY(-2px)}
+.badge{display:inline-block;background:#0ea5e9;padding:4px 10px;border-radius:999px;font-size:.8rem}
+.progress{height:12px;background:#334155;border-radius:999px;overflow:hidden}
+.progress>div{height:100%;width:78%;background:#22c55e}
 nav{position:fixed;bottom:0;left:0;right:0;background:#111827;padding:12px;display:flex;justify-content:space-around}
 nav a{color:#fff;text-decoration:none}
-button{padding:10px 14px;border:0;border-radius:10px;background:#0ea5e9;color:#fff}

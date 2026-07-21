@@ -1,13 +1,24 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='manifest' href='manifest.json'>
-<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v14</title></head>
-<body><header><h1>🇪🇸 ReisKompas v14</h1><p>Geïntegreerd dashboard</p></header>
+<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v15</title></head>
+<body>
+<header>
+<h1>🇪🇸 ReisKompas v15</h1>
+<span class='badge'>Beta</span>
+</header>
 <main>
-<div class='card'><strong>Modules</strong></div>
+<div class='card'>
+<h3>Projectvoortgang</h3>
+<div class='progress'><div></div></div>
+<p><strong id='count'>0</strong> modules beschikbaar</p>
+</div>
 <div id='modules' class='grid'></div>
-<div class='card'><button onclick="alert('Offline-cache actief zodra de app eenmaal is bezocht.')">Controleer offline status</button></div>
 </main>
-<nav><a href='index.html'>🏠 Home</a><a href='pages/instellingen.html'>⚙️ Instellingen</a></nav>
+<nav>
+<a href='index.html'>🏠</a>
+<a href='pages/planning.html'>📅</a>
+<a href='pages/checklist.html'>✅</a>
+<a href='pages/favorieten.html'>❤️</a>
+</nav>
 <script src='assets/js/app.js'></script>
 </body></html>

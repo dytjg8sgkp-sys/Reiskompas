@@ -1,9 +1,9 @@
 
-if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js').catch(()=>{});}
-async function loadModules(){
- const g=document.getElementById('modules');
- if(!g)return;
+async function loadDashboard(){
+ const c=document.getElementById('modules');
+ if(!c) return;
  const data=await (await fetch('assets/data/modules.json')).json();
- g.innerHTML=data.map(m=>`<a class="tile" href="pages/${m.page}">${m.icon} ${m.name}</a>`).join('');
+ c.innerHTML=data.map(m=>`<a class="tile" href="pages/${m.page}">${m.icon}<br><strong>${m.name}</strong></a>`).join('');
+ document.getElementById('count').textContent=data.length;
 }
-window.addEventListener('load',loadModules);
+window.addEventListener('load',loadDashboard);

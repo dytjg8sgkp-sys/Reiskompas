@@ -1,27 +1,47 @@
 [
   {
-    "name": "Reis",
     "icon": "🚗",
+    "name": "Reis",
     "page": "reis.html"
   },
   {
-    "name": "Camping",
     "icon": "🏕️",
+    "name": "Camping",
     "page": "camping.html"
   },
   {
-    "name": "Dagtrips",
     "icon": "🗺️",
+    "name": "Dagtrips",
     "page": "dagtrips.html"
   },
   {
-    "name": "Restaurants",
     "icon": "🍽️",
+    "name": "Restaurants",
     "page": "restaurants.html"
   },
   {
-    "name": "Checklist",
+    "icon": "🏖️",
+    "name": "Stranden",
+    "page": "stranden.html"
+  },
+  {
+    "icon": "🎢",
+    "name": "Activiteiten",
+    "page": "activiteiten.html"
+  },
+  {
+    "icon": "📅",
+    "name": "Planning",
+    "page": "planning.html"
+  },
+  {
     "icon": "✅",
+    "name": "Checklist",
     "page": "checklist.html"
+  },
+  {
+    "icon": "❤️",
+    "name": "Favorieten",
+    "page": "favorieten.html"
   }
 ]
