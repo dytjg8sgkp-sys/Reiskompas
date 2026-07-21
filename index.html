@@ -1,47 +1,42 @@
-<!doctype html><html lang='nl'><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='assets/css/style.css'>
-<title>ReisKompas v16</title></head>
+<!doctype html><html lang="nl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>ReisKompas v17</title></head>
 <body>
 <header>
-<h1>🇪🇸 ReisKompas v16</h1>
-<div class='subtitle'>Nog <strong id='days'>...</strong> dagen tot vertrek</div>
-<div class='progress'><div></div></div>
+<h1>🇪🇸 ReisKompas v17</h1>
+<div>Nog <strong id="days">...</strong> dagen tot vertrek</div>
+<div class="progress"><div></div></div>
+<span class="badge">Dashboard 2.0</span>
 </header>
+
 <main>
-<div class='grid'>
-<a class='tile' href='#'><div class='icon'>🚗</div><h3>Reis</h3><small>Route, hotels & caravan</small></a>
-<a class='tile' href='#'><div class='icon'>🏕️</div><h3>Camping</h3><small>Playa Montroig</small></a>
-<a class='tile' href='#'><div class='icon'>🍽️</div><h3>Restaurants</h3><small>Favorieten</small></a>
-<a class='tile' href='#'><div class='icon'>🗺️</div><h3>Dagtrips</h3><small>Barcelona & meer</small></a>
-<a class='tile' href='#'><div class='icon'>🏖️</div><h3>Stranden</h3><small>Costa Dorada</small></a>
-<a class='tile' href='#'><div class='icon'>🎢</div><h3>Activiteiten</h3><small>PortAventura</small></a>
-<a class='tile' href='#'><div class='icon'>📅</div><h3>Planning</h3><small>Dagprogramma</small></a>
-<a class='tile' href='#'><div class='icon'>✅</div><h3>Checklist</h3><small>Voor vertrek</small></a>
+<div id="grid" class="grid"></div>
+
+<div class="widget">
+<h3>📍 Volgende activiteit</h3>
+<p>Overnachting plannen bij La Jonquera en route controleren.</p>
 </div>
 
-<div class='widget'>
-<h3>📍 Volgende stap</h3>
-<p>Hotel bij La Jonquera reserveren en caravan ophalen.</p>
+<div class="grid">
+<div class="widget">
+<h3>🌤️ Weer</h3>
+<p>Voorbereid voor live weersinformatie.</p>
+</div>
+<div class="widget">
+<h3>💶 Budget</h3>
+<p>Budgetmodule voorbereid voor brandstof, tol en campingkosten.</p>
+</div>
 </div>
 
-<div class='widget'>
-<h3>🌤️ Playa Montroig</h3>
-<p>Weer-widget (voorbereid voor live gegevens).</p>
-</div>
-
-<div class='widget'>
-<h3>📝 Laatste checklist</h3>
+<div class="widget">
+<h3>📝 Snelle checklist</h3>
 <ul>
-<li>☑️ Caravan gecontroleerd</li>
+<li>☑ Caravan gecontroleerd</li>
+<li>☑ Hotel onderweg gekozen</li>
 <li>⬜ Paspoorten</li>
-<li>⬜ Tolbadge</li>
+<li>⬜ Inpakken</li>
 </ul>
-</div>
-
-<div class='widget'>
-<h3>❤️ Favorieten</h3>
-<p>Nog geen favorieten toegevoegd.</p>
 </div>
 </main>
 
@@ -52,5 +47,6 @@
 <a href="#">❤️</a>
 <a href="#">⚙️</a>
 </nav>
-<script src='assets/js/app.js'></script>
+
+<script src="assets/js/app.js"></script>
 </body></html>

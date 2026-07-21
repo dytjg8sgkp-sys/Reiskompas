@@ -1,18 +1,19 @@
 
-:root{--bg:#0f172a;--card:#1e293b;--text:#fff;--accent:#38bdf8}
+:root{
+ --bg:#0f172a;--card:#1e293b;--text:#fff;
+ --blue:#2563eb;--green:#22c55e;--orange:#f59e0b;--red:#ef4444;
+}
 *{box-sizing:border-box}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;background:var(--bg);color:var(--text)}
-header{padding:26px;background:linear-gradient(135deg,#2563eb,#22d3ee)}
-h1{margin:0}
-.subtitle{opacity:.9;margin-top:8px}
+body{margin:0;font-family:-apple-system,Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{padding:24px;background:linear-gradient(135deg,#2563eb,#22d3ee)}
 main{padding:18px 18px 90px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px}
-.tile{background:var(--card);border-radius:18px;padding:18px;text-decoration:none;color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.25);transition:.2s}
-.tile:hover{transform:translateY(-3px)}
-.tile .icon{font-size:2rem}
-.tile small{display:block;opacity:.75;margin-top:8px}
-.widget{background:var(--card);border-radius:18px;padding:18px;margin-top:16px}
-.progress{height:12px;background:#334155;border-radius:999px;overflow:hidden}
-.progress div{height:100%;width:42%;background:#22c55e}
-nav{position:fixed;left:12px;right:12px;bottom:12px;background:#111827;border-radius:18px;padding:12px;display:flex;justify-content:space-around;box-shadow:0 8px 20px rgba(0,0,0,.4)}
-nav a{text-decoration:none;color:#fff;font-size:1.3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+.tile{display:block;text-decoration:none;color:#fff;background:var(--card);padding:18px;border-radius:18px}
+.icon{font-size:2rem}
+.sub{opacity:.7;font-size:.9rem}
+.widget{background:var(--card);padding:18px;border-radius:18px;margin-top:16px}
+.progress{height:10px;background:#334155;border-radius:999px;overflow:hidden}
+.progress div{height:100%;width:46%;background:var(--green)}
+.badge{display:inline-block;padding:4px 10px;border-radius:999px;background:#1d4ed8}
+nav{position:fixed;left:12px;right:12px;bottom:12px;background:#111827;border-radius:18px;padding:12px;display:flex;justify-content:space-around}
+nav a{color:#fff;text-decoration:none}
