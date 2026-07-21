@@ -1,85 +1,53 @@
-<!doctype html>
-<html lang="nl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ReisKompas v84</title>
-<link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header>
-<h1>ReisKompas v84</h1>
-<p id="countdown"></p>
-</header>
-
+<!doctype html><html lang='nl'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>ReisKompas v85</title>
+<link rel='manifest' href='manifest.json'><link rel='stylesheet' href='css/style.css'></head>
+<body><header><h1>ReisKompas v85</h1><div id='count'></div></header>
 <nav>
-<button onclick="show('dashboard')">Dashboard</button>
+<button onclick="show('home')">Home</button>
 <button onclick="show('route')">Route</button>
-<button onclick="show('camping')">Camping</button>
-<button onclick="show('packing')">Paklijst</button>
-<button onclick="show('documents')">Documenten</button>
+<button onclick="show('planning')">Planning</button>
+<button onclick="show('fav')">Favorieten</button>
+<button onclick="show('docs')">Docs</button>
 </nav>
-
 <main>
-
-<section id="dashboard">
-<div class="card"><h2>Vakantie</h2>
-<p>Camping Playa Montroig Resort</p>
-<p>2 t/m 16 augustus 2026</p>
+<section id='home'>
+<div class='card'><h2>Camping Playa Montroig</h2><p>2 t/m 16 augustus 2026</p><p>Premium Deluxe • 14 nachten</p></div>
+<div class='grid'>
+<div class='card'><b>Hotel</b><br>Omgeving La Jonquera</div>
+<div class='card'><b>Status</b><br>Klaar voor vertrek</div>
 </div>
-
-<div class="grid">
-<div class="card">
-<h3>Hotel</h3>
-<p>Overnachting omgeving La Jonquera</p>
-</div>
-
-<div class="card">
-<h3>Reis</h3>
-<p>Nederland → La Jonquera → Playa Montroig</p>
-</div>
-</div>
-
 </section>
 
-<section id="route" hidden>
+<section id='route' hidden>
 <h2>Route</h2>
-<ol>
-<li>Vertrek vanuit Nederland</li>
-<li>Hotel omgeving La Jonquera</li>
-<li>Camping Playa Montroig Resort</li>
-</ol>
+<table>
+<tr><th>Traject</th><th>Indicatie</th></tr>
+<tr><td>Thuis → La Jonquera</td><td>± eerste reisdag</td></tr>
+<tr><td>La Jonquera → Playa Montroig</td><td>± 2 uur</td></tr>
+</table>
 </section>
 
-<section id="camping" hidden>
-<h2>Camping</h2>
-<ul>
-<li>Premium Deluxe</li>
-<li>14 nachten</li>
-<li>Check-in: 2 augustus 2026</li>
-<li>Check-out: 16 augustus 2026</li>
-</ul>
+<section id='planning' hidden>
+<h2>14-daagse planning</h2>
+<ul id='days'></ul>
 </section>
 
-<section id="packing" hidden>
-<h2>Paklijst</h2>
-<div id="list"></div>
+<section id='fav' hidden>
+<h2>Favorieten</h2>
+<h3>Restaurants</h3>
+<ul><li>Toe te voegen</li></ul>
+<h3>Stranden</h3>
+<ul><li>Toe te voegen</li></ul>
 </section>
 
-<section id="documents" hidden>
+<section id='docs' hidden>
 <h2>Documenten</h2>
 <ul>
-<li>Campingreservering ✓</li>
+<li>Campingreservering</li>
 <li>Hotelreservering</li>
 <li>Verzekering</li>
-<li>Rijbewijs</li>
-<li>Paspoort / ID</li>
+<li>Rijbewijs / ID</li>
 </ul>
 </section>
-
 </main>
-
-<script src="js/app.js"></script>
-</body>
-</html>
+<script src='js/app.js'></script></body></html>

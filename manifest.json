@@ -1,7 +1,1 @@
-{
-"name":"ReisKompas",
-"short_name":"ReisKompas",
-"display":"standalone",
-"start_url":"./",
-"background_color":"#1565c0"
-}
+{"name":"ReisKompas v85","short_name":"ReisKompas","display":"standalone","start_url":"./"}
