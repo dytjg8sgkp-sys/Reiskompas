@@ -17,7 +17,7 @@
   {
     "icon": "🍽️",
     "name": "Restaurants",
-    "desc": "Aanraders"
+    "desc": "Favorieten"
   },
   {
     "icon": "🏖️",
@@ -32,7 +32,7 @@
   {
     "icon": "📅",
     "name": "Planning",
-    "desc": "Dagprogramma"
+    "desc": "Dagplanning"
   },
   {
     "icon": "✅",
