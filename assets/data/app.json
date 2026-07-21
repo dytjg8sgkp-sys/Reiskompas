@@ -1,37 +1,77 @@
 {
-  "widgets": [
+  "trip": {
+    "camping": "Camping Playa Montroig",
+    "arrival": "02-08-2026",
+    "departure": "16-08-2026",
+    "hotel": "La Jonquera",
+    "reference": "O20251007DEBIE17443332"
+  },
+  "days": [
     [
-      "🏕️ Camping",
-      "2–16 aug 2026"
+      "02 aug",
+      "Aankomst"
     ],
     [
-      "🚗 Route",
-      "La Jonquera → Playa Montroig"
+      "03 aug",
+      "Camping"
     ],
     [
-      "📄 Reservering",
-      "Premium Deluxe"
+      "04 aug",
+      "Strand"
     ],
     [
-      "🧳 Paklijst",
-      "8 items"
+      "05 aug",
+      "Cambrils"
+    ],
+    [
+      "06 aug",
+      "Tarragona"
+    ],
+    [
+      "07 aug",
+      "Rust"
+    ],
+    [
+      "08 aug",
+      "PortAventura"
+    ],
+    [
+      "09 aug",
+      "Barcelona"
+    ],
+    [
+      "10 aug",
+      "Vrij"
+    ],
+    [
+      "11 aug",
+      "Vrij"
+    ],
+    [
+      "12 aug",
+      "Vrij"
+    ],
+    [
+      "13 aug",
+      "Vrij"
+    ],
+    [
+      "14 aug",
+      "Vrij"
+    ],
+    [
+      "15 aug",
+      "Laatste volle dag"
+    ],
+    [
+      "16 aug",
+      "Vertrek"
     ]
   ],
-  "places": [
-    "Receptie",
-    "Zwembad",
-    "Restaurant",
-    "Supermarkt",
-    "Strand",
-    "Jullie plaats"
-  ],
-  "restaurants": [
-    "Can Salvador",
-    "Casa Pepita",
-    "Friends Restaurant"
-  ],
-  "beaches": [
-    "Playa Cristal",
-    "Playa Montroig"
+  "docs": [
+    "Campingreservering",
+    "Hotel La Jonquera",
+    "Caravanpapieren",
+    "Verzekering"
   ]
 }

@@ -1,9 +1,8 @@
 
 async function init(){
  const d=await (await fetch('assets/data/app.json')).json();
- widgets.innerHTML=d.widgets.map(w=>`<div class='card widget'><strong>${w[0]}</strong><span>${w[1]}</span></div>`).join('');
- camp.innerHTML=d.places.map(p=>`<div>${p}</div>`).join('');
- rests.innerHTML=d.restaurants.map(r=>'<li>'+r+'</li>').join('');
- beaches.innerHTML=d.beaches.map(b=>'<li>'+b+'</li>').join('');
+ summary.innerHTML=`<span class='badge'>${d.trip.camping}</span><p><strong>Aankomst:</strong> ${d.trip.arrival}<br><strong>Vertrek:</strong> ${d.trip.departure}<br><strong>Hotel onderweg:</strong> ${d.trip.hotel}<br><strong>Referentie:</strong> ${d.trip.reference}</p>`;
+ planning.innerHTML=d.days.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td></tr>`).join('');
+ documents.innerHTML=d.docs.map(x=>'<li>'+x+'</li>').join('');
 }
 window.onload=init;
