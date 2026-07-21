@@ -1,64 +1,27 @@
 <!doctype html><html lang='nl'><head>
-<meta charset='utf-8'>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='assets/css/style.css'>
-<title>ReisKompas v23</title>
-</head><body>
-<header>
-<h1>🇪🇸 ReisKompas v23</h1>
-<p>Nog <strong id="days">...</strong> dagen tot vertrek</p>
-<div class="progress"><div></div></div>
-</header>
-
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v24</title></head><body>
+<header><h1>🇪🇸 ReisKompas v24</h1><p>Nog <strong id='days'>...</strong> dagen tot vertrek</p></header>
 <main>
 <div class="hero">
-<h2>Vakantie-overzicht</h2>
-<p><strong id="moduleCount">0</strong> modules • Voorbereiding 82%</p>
-<div>
-<span class="pill">🚗 Caravan</span>
-<span class="pill">📍 La Jonquera</span>
-<span class="pill">🏕️ Playa Montroig</span>
-<span class="pill">☀️ Zomervakantie 2026</span>
-</div>
+<h2>Vakantie Dashboard</h2>
+<div class="progress"><div></div></div>
+<p><strong id="count">0</strong> modules • Voorbereiding 88%</p>
 </div>
 
-<div id="grid" class="grid"></div>
+<div id="modules" class="grid"></div>
 
-<div class="row">
-<div class="card">
-<h3>🛣️ Route</h3>
-<p>Nederland → La Jonquera → Playa Montroig.</p>
+<div class="widgets">
+<div class="stack">
+<div class="card"><h3>🛣️ Reisoverzicht</h3><p>Nederland → La Jonquera → Playa Montroig</p></div>
+<div class="card"><h3>📅 Planning</h3><ul><li>Dag 1: La Jonquera</li><li>Dag 2: Aankomst camping</li><li>Dag 3: Rustdag</li></ul></div>
 </div>
-<div class="card">
-<h3>📍 Volgende stap</h3>
-<p>Reserveringen controleren en caravan definitief inpakken.</p>
-</div>
-</div>
-
-<div class="row">
-<div class="card">
-<h3>💶 Budget</h3>
-<p>Brandstof • Tol • Hotel • Camping • Restaurants.</p>
-</div>
-<div class="card">
-<h3>📝 Laatste controles</h3>
-<ul>
-<li>☑ Hotel bevestigd</li>
-<li>☑ Route gepland</li>
-<li>⬜ Paspoorten</li>
-<li>⬜ Verzekeringspapieren</li>
-</ul>
+<div class="stack">
+<div class="card"><h3>💶 Budget</h3><p>Brandstof<br>Tol<br>Camping<br>Restaurants</p></div>
+<div class="card"><h3>📝 Acties</h3><ul><li>☑ Hotel</li><li>☑ Route</li><li>⬜ Inpakken</li><li>⬜ Documenten</li></ul></div>
 </div>
 </div>
 </main>
-
-<nav>
-<a href="#">🏠</a>
-<a href="#">🗺️</a>
-<a href="#">📅</a>
-<a href="#">❤️</a>
-<a href="#">⚙️</a>
-</nav>
-
+<nav><a href="#">🏠</a><a href="#">🗺️</a><a href="#">📅</a><a href="#">❤️</a><a href="#">⚙️</a></nav>
 <script src="assets/js/app.js"></script>
 </body></html>
