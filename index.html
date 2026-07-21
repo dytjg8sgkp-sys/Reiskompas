@@ -1,51 +1,66 @@
-<!doctype html><html lang='nl'><head>
+<!DOCTYPE html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas 2.3</title>
+<title>ReisKompas 2.4</title>
 <link rel='stylesheet' href='css/style.css'>
 </head><body>
-<header><h1>🏕️ ReisKompas 2.3</h1><p>Camping Navigator+</p></header>
+<header><h1>🏖️ ReisKompas 2.4</h1><p>Vakantie Spanje 2026</p></header>
 
-<div class="container">
-<aside>
-<h2>Navigator</h2>
-<input id="place" placeholder="Kampeerplaats">
-<button id="save">💾 Opslaan</button>
+<nav>
+<button data-page="home">Dashboard</button>
+<button data-page="camping">Camping</button>
+<button data-page="planning">Planning</button>
+<button data-page="restaurants">Restaurants</button>
+<button data-page="checklist">Checklist</button>
+</nav>
 
-<h3>Favorieten</h3>
-<div id="buttons">
-<button data-name="📍 Receptie">📍 Receptie</button>
-<button data-name="🏊 Garden Pool">🏊 Garden Pool</button>
-<button data-name="💦 Splash Pool">💦 Splash Pool</button>
-<button data-name="🛒 Supermarkt">🛒 Supermarkt</button>
-<button data-name="🍽️ La Terrassa">🍽️ La Terrassa</button>
-<button data-name="🏖️ Strand">🏖️ Strand</button>
-</div>
-
+<section id="home" class="page">
 <div class="card">
-<b>Gekozen bestemming</b>
-<p id="destination">Nog geen</p>
+<h2>Aftellen</h2>
+<p id="countdown"></p>
 </div>
+<div class="grid">
+<div class="card"><h3>🌡️ Weer</h3><p>Plaatsaanduiding voor toekomstige live weersinformatie.</p></div>
+<div class="card"><h3>📍 Bestemming</h3><p>Playa Montroig Camping Resort</p></div>
+</div>
+</section>
 
+<section id="camping" class="page" hidden>
 <div class="card">
-<b>Checklist</b>
-<label><input type="checkbox" id="tow"> Caravan aangekoppeld</label><br>
-<label><input type="checkbox" id="docs"> Documenten mee</label><br>
-<label><input type="checkbox" id="fridge"> Koelkast aan</label>
+<h2>Camping</h2>
+<input id="pitch" placeholder="Kampeerplaats">
+<button id="savePitch">Kampeerplaats opslaan</button>
+<p id="pitchSaved"></p>
 </div>
-</aside>
+</section>
 
-<main>
-<div class="toolbar">
-<button onclick="zoom(-0.1)">➖</button>
-<button onclick="zoom(0.1)">➕</button>
-<span id="zoomtxt">100%</span>
+<section id="planning" class="page" hidden>
+<div class="card">
+<h2>Dagplanning</h2>
+<textarea id="plan" placeholder="Planning voor vandaag..."></textarea>
 </div>
-<div class="viewer" id="viewer">
-<iframe id="map" src="docs/Campingkaart_HD.pdf"></iframe>
+</section>
+
+<section id="restaurants" class="page" hidden>
+<div class="card">
+<h2>Favorieten</h2>
+<ul>
+<li>La Terrassa</li>
+<li>Espai Grill</li>
+<li>Pai-Pai Cocktail Bar</li>
+<li>Tropical</li>
+</ul>
 </div>
-<p class="note">Zoom werkt momenteel als viewer-schaal. In een volgende versie kan dit worden vervangen door een echte interactieve kaart met hotspots.</p>
-</main>
+</section>
+
+<section id="checklist" class="page" hidden>
+<div class="card">
+<h2>Vertrekchecklist</h2>
+<label><input type="checkbox" class="chk" data-k="paspoort"> Paspoorten</label><br>
+<label><input type="checkbox" class="chk" data-k="caravan"> Caravan aangekoppeld</label><br>
+<label><input type="checkbox" class="chk" data-k="koelkast"> Koelkast aan</label><br>
+<label><input type="checkbox" class="chk" data-k="stroom"> Stroomkabel mee</label>
 </div>
+</section>
 
 <script src="js/app.js"></script>
 </body></html>
