@@ -1,47 +1,37 @@
 {
-  "countdown": "Vertrek richting Spanje: zomer 2026",
-  "days": [
+  "widgets": [
     [
-      "02 aug",
-      "Aankomst"
+      "🏕️ Camping",
+      "2–16 aug 2026"
     ],
     [
-      "03 aug",
-      "Camping"
+      "🚗 Route",
+      "La Jonquera → Playa Montroig"
     ],
     [
-      "04 aug",
-      "Strand"
+      "📄 Reservering",
+      "Premium Deluxe"
     ],
     [
-      "05 aug",
-      "Cambrils"
-    ],
-    [
-      "06 aug",
-      "Tarragona"
-    ],
-    [
-      "07 aug",
-      "Rust"
-    ],
-    [
-      "08 aug",
-      "PortAventura"
-    ],
-    [
-      "09 aug",
-      "Barcelona"
-    ],
-    [
-      "10-16 aug",
-      "Vrij in te vullen"
+      "🧳 Paklijst",
+      "8 items"
     ]
   ],
-  "docs": [
-    "Campingreservering",
-    "Hotel La Jonquera",
-    "Verzekering",
-    "Caravanpapieren"
+  "places": [
+    "Receptie",
+    "Zwembad",
+    "Restaurant",
+    "Supermarkt",
+    "Strand",
+    "Jullie plaats"
+  ],
+  "restaurants": [
+    "Can Salvador",
+    "Casa Pepita",
+    "Friends Restaurant"
+  ],
+  "beaches": [
+    "Playa Cristal",
+    "Playa Montroig"
   ]
 }

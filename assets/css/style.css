@@ -1,12 +1,11 @@
 
-body{margin:0;font-family:Arial,sans-serif;background:#0f172a;color:#fff}
-header{background:linear-gradient(135deg,#1d4ed8,#0891b2);padding:18px}
-nav{display:flex;gap:10px;overflow:auto;background:#111827;padding:10px}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1220;color:#fff}
+header{background:linear-gradient(135deg,#1d4ed8,#0ea5e9);padding:18px}
+nav{display:flex;gap:8px;overflow:auto;padding:10px;background:#111827}
 nav a{color:#fff;text-decoration:none;background:#334155;padding:8px 12px;border-radius:8px}
 main{max-width:1200px;margin:auto;padding:20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
 .card{background:#1e293b;border-radius:12px;padding:16px}
-table{width:100%;border-collapse:collapse}
-td{padding:6px;border-bottom:1px solid #334155}
-.progress{height:12px;background:#334155;border-radius:8px;overflow:hidden}
-.bar{height:100%;width:78%;background:#22c55e}
+.widget{display:flex;justify-content:space-between;align-items:center}
+.map{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.map div{background:#334155;padding:14px;border-radius:8px;text-align:center}

@@ -1,18 +1,15 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v78</title></head>
+<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v79</title></head>
 <body>
-<header><h1>🇪🇸 ReisKompas v78</h1></header>
-<nav>
-<a href="#">Dashboard</a><a href="#">Planning</a><a href="#">Route</a><a href="#">Camping</a><a href="#">Documenten</a>
-</nav>
+<header><h1>🇪🇸 ReisKompas v79</h1><p>Offline reisdashboard (prototype)</p></header>
+<nav><a>Dashboard</a><a>Route</a><a>Camping</a><a>Planning</a><a>Documenten</a></nav>
 <main>
-<div class='card'><h2>⏳ Voorbereiding</h2><div class='progress'><div class='bar'></div></div><p id='countdown'></p></div>
-<div class='grid'>
-<div class='card'><h2>📅 Reisplanning</h2><table id='plan'></table></div>
-<div class='card'><h2>📄 Documenten</h2><ul id='docs'></ul><p>Klaar om reserveringen te koppelen.</p></div>
-<div class='card'><h2>🗺️ Dashboard</h2><ul><li>Camping Playa Montroig</li><li>Hotel La Jonquera</li><li>Route</li><li>Paklijst</li></ul></div>
-<div class='card'><h2>🌤️ Weer</h2><p>Module voorbereid voor live weerinformatie.</p></div>
+<div id="widgets" class="grid"></div>
+<div class="grid">
+<div class="card"><h2>🗺️ Campingoverzicht</h2><div id="camp" class="map"></div></div>
+<div class="card"><h2>🍽️ Restaurants</h2><ul id="rests"></ul><h2>🏖️ Stranden</h2><ul id="beaches"></ul></div>
+<div class="card"><h2>📱 Offline gereed</h2><p>Structuur voorbereid voor caching van reisgegevens, planning en documenten.</p></div>
 </div>
-<script src='assets/js/app.js'></script>
+<script src="assets/js/app.js"></script>
 </main></body></html>
