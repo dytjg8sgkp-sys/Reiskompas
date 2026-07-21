@@ -1,21 +1,47 @@
 {
-  "route": [
-    "Nederland",
-    "La Jonquera",
-    "Playa Montroig"
-  ],
-  "days": [
-    "Aankomst",
-    "Camping",
-    "Barcelona",
-    "PortAventura",
-    "Cambrils",
-    "Tarragona",
-    "Terugreis"
-  ],
-  "favorites": [
-    "Playa",
-    "Restaurant",
-    "Strandwandeling"
+  "booking": {
+    "camping": "Camping Playa Montroig",
+    "type": "Premium Deluxe",
+    "arrival": "02-08-2026",
+    "departure": "16-08-2026",
+    "nights": 14,
+    "reference": "O20251007DEBIE17443332",
+    "price": "€ 2.796,86",
+    "address": "Carretera N-340 Km 1.136, Mont-roig del Camp",
+    "phone": "+34 977 810 637"
+  },
+  "planning": [
+    [
+      "2 aug",
+      "Aankomst & caravan opzetten"
+    ],
+    [
+      "3 aug",
+      "Camping ontdekken"
+    ],
+    [
+      "4 aug",
+      "Strand"
+    ],
+    [
+      "5 aug",
+      "Cambrils"
+    ],
+    [
+      "6 aug",
+      "Tarragona"
+    ],
+    [
+      "7 aug",
+      "Rustdag"
+    ],
+    [
+      "8 aug",
+      "PortAventura"
+    ],
+    [
+      "9 aug",
+      "Barcelona"
+    ]
   ]
 }
