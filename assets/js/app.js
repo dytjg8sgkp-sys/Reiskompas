@@ -1,32 +1,16 @@
 
-const activities=[
-'Inchecken camping',
-'Strand Playa Montroig',
-'Barcelona bezoeken',
-'PortAventura',
-'Cambrils boulevard',
-'Tarragona centrum'
+const places=[
+ {name:'Camping Playa Montroig',map:'https://maps.apple.com/?q=Playa+Montroig'},
+ {name:'Barcelona',map:'https://maps.apple.com/?q=Barcelona'},
+ {name:'Cambrils',map:'https://maps.apple.com/?q=Cambrils'},
+ {name:'Tarragona',map:'https://maps.apple.com/?q=Tarragona'},
+ {name:'PortAventura',map:'https://maps.apple.com/?q=PortAventura'}
 ];
-
-function renderPlanner(){
- const state=JSON.parse(localStorage.getItem('rk67_plan')||'[]');
- const list=document.getElementById('planner');
- list.innerHTML='';
- activities.forEach((a,i)=>{
+window.onload=()=>{
+ const list=document.getElementById('places');
+ places.forEach(p=>{
    const li=document.createElement('li');
-   const cb=document.createElement('input');
-   cb.type='checkbox';
-   cb.checked=!!state[i];
-   cb.onchange=()=>{
-      state[i]=cb.checked;
-      localStorage.setItem('rk67_plan',JSON.stringify(state));
-      renderPlanner();
-   };
-   li.append(cb,document.createTextNode(a));
-   if(cb.checked) li.className='done';
+   li.innerHTML=`<strong>${p.name}</strong><br><a target="_blank" href="${p.map}">Open in Apple Maps</a>`;
    list.appendChild(li);
  });
- document.getElementById('planprogress').textContent=
-   state.filter(Boolean).length+' / '+activities.length+' activiteiten voltooid';
 }
-window.onload=renderPlanner;
