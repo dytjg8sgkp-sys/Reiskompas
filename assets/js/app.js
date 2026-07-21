@@ -1,4 +1,10 @@
-if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js').catch(()=>{});}
-const c=document.getElementById('count');
-if(c){const d=Math.floor((new Date('2026-07-01')-new Date())/86400000);c.textContent='Nog '+Math.max(d,0)+' dagen';}
-function saveFav(name){let f=JSON.parse(localStorage.getItem('fav')||'[]');if(!f.includes(name))f.push(name);localStorage.setItem('fav',JSON.stringify(f));alert('Opgeslagen');}
+async function loadTrips(){
+const ul=document.getElementById('trips'); if(!ul)return;
+const data=await (await fetch('../assets/data/dagtrips.json')).json();
+const q=(document.getElementById('zoek')?.value||'').toLowerCase();
+ul.innerHTML='';
+data.filter(t=>t.naam.toLowerCase().includes(q)).forEach(t=>{
+ul.innerHTML+=`<li>${t.naam} (${t.afstand})</li>`;
+});
+}
+window.addEventListener('load',loadTrips);
