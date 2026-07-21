@@ -2,20 +2,26 @@
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
 <link rel='manifest' href='manifest.json'>
 <link rel='stylesheet' href='assets/css/style.css'>
-<title>ReisKompas v40</title></head><body>
-<header><h1>🇪🇸 ReisKompas v40</h1><p>Werkende kernmodules</p></header>
+<title>ReisKompas v50</title></head><body>
+<header><h1>🇪🇸 ReisKompas v50</h1><p>Functionele reisassistent</p></header>
 <main>
-<div id='modules' class='grid'></div>
 <div class='grid'>
 <div class='card'>
 <h2>💶 Budget</h2>
-<input id='budget' placeholder='Bijv. €2500 budget'>
-<p>Wordt lokaal opgeslagen.</p>
+<input id='budget' placeholder='Totaal budget'>
+<p>Automatisch lokaal opgeslagen.</p>
 </div>
+
 <div class='card'>
 <h2>📝 Reisnotities</h2>
-<textarea id='notes' rows='6' placeholder='Notities...'></textarea>
+<textarea id='notes' rows='7' placeholder='Notities'></textarea>
 </div>
+
+<div class='card'>
+<h2>📍 Bestemmingen</h2>
+<ul id='places'></ul>
+</div>
+
 <div class='card'>
 <h2>📄 Reserveringen</h2>
 <ul>
@@ -23,11 +29,18 @@
 <li>Camping Playa Montroig</li>
 </ul>
 </div>
+
+<div class='card'>
+<h2>🌤️ Weer</h2>
+<p>Voorbereid voor live weerintegratie.</p>
+</div>
+
 <div class='card'>
 <h2>🗺️ Route</h2>
 <p>Nederland → La Jonquera → Playa Montroig</p>
-<a class='btn' href='https://maps.apple.com/?q=Playa+Montroig'>Open Apple Maps</a>
+<p>Apple Maps en Google Maps kunnen in een volgende versie direct worden gekoppeld.</p>
 </div>
 </div>
 <script src='assets/js/app.js'></script>
-</main></body></html>
+</main>
+</body></html>

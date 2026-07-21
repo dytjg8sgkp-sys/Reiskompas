@@ -1,10 +1,10 @@
 
 async function init(){
- const m=await (await fetch('assets/data/modules.json')).json();
- modules.innerHTML=m.map(x=>`<div class='card'><h3>${x.icon} ${x.name}</h3></div>`).join('');
- notes.value=localStorage.getItem('notes')||'';
- notes.oninput=()=>localStorage.setItem('notes',notes.value);
- budget.value=localStorage.getItem('budget')||'';
- budget.oninput=()=>localStorage.setItem('budget',budget.value);
+ const p=await (await fetch('assets/data/places.json')).json();
+ places.innerHTML=p.map(x=>`<li>${x.name} <small>(${x.type})</small></li>`).join('');
+ notes.value=localStorage.getItem('rk_notes')||'';
+ notes.oninput=()=>localStorage.setItem('rk_notes',notes.value);
+ budget.value=localStorage.getItem('rk_budget')||'';
+ budget.oninput=()=>localStorage.setItem('rk_budget',budget.value);
 }
 document.addEventListener('DOMContentLoaded',init);
