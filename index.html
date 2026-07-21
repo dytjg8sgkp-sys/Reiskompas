@@ -1,40 +1,51 @@
-<!doctype html><html lang='nl'><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='css/style.css'><title>ReisKompas v94</title></head>
+<!doctype html><html lang='nl'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>ReisKompas v95</title>
+<link rel='stylesheet' href='css/style.css'></head>
 <body>
-<header><h1>🏕️ ReisKompas v94</h1><p>Campingmodule uitgebreid</p></header>
-
+<header><h1>ReisKompas v95</h1><p>Interactieve campingmodule</p></header>
 <nav>
-<button onclick="show('camp')">Camping</button>
-<button onclick="show('docs')">Documenten</button>
-<button onclick="show('info')">Voorzieningen</button>
+<button onclick="show('map')">Kaart</button>
+<button onclick="show('fac')">Voorzieningen</button>
+<button onclick="show('docs')">Docs</button>
 </nav>
-
 <main>
-<section id="camp">
+<section id="map">
 <div class="card">
 <h2>Campingkaart</h2>
-<p>De officiële plattegrond is opgenomen in de app.</p>
-<a class="btn" href="docs/Plattegrond_Playa_Montroig.pdf" target="_blank">🗺️ Open campingplattegrond</a>
+<p>Open de officiële plattegrond en gebruik de snelknoppen hieronder.</p>
+<p><a class="btn" href="docs/Plattegrond_Playa_Montroig.pdf" target="_blank">🗺️ Plattegrond openen</a></p>
+<div class="tiles">
+<button onclick="info('Receptie')">Receptie</button>
+<button onclick="info('Zwembad')">Zwembad</button>
+<button onclick="info('Supermarkt')">Supermarkt</button>
+<button onclick="info('Restaurant')">Restaurant</button>
+<button onclick="info('Sportcentrum')">Sport</button>
+<button onclick="info('Strand')">Strand</button>
+</div>
+<div id="details" class="info">Selecteer een voorziening.</div>
+</div>
+</section>
+
+<section id="fac" hidden>
+<div class="card">
+<h2>Voorzieningen</h2>
+<ul>
+<li>Receptie & medische post</li>
+<li>Supermarkt, bakkerij en viswinkel</li>
+<li>Garden Pool & Splash Pool</li>
+<li>Restaurants, bars en take-away</li>
+<li>Sportcentrum, fitness en minigolf</li>
+<li>Directe strandtoegang</li>
+</ul>
 </div>
 </section>
 
 <section id="docs" hidden>
 <div class="card">
 <h2>Documentencentrum</h2>
-<ul>
-<li><a href="docs/Campingreservering_Playa_Montroig.pdf" target="_blank">📄 Campingreservering</a></li>
-<li><a href="docs/Plattegrond_Playa_Montroig.pdf" target="_blank">🗺️ Officiële campingplattegrond</a></li>
-</ul>
-</div>
-</section>
-
-<section id="info" hidden>
-<div class="grid">
-<div class="card"><h3>🏊 Zwembaden</h3><p>Garden Pool en Splash Pool.</p></div>
-<div class="card"><h3>🍽️ Restaurants</h3><p>La Terrassa, Espai Grill, Tropical, Take Away en meer.</p></div>
-<div class="card"><h3>🛒 Services</h3><p>Supermarkt, bakkerij, wasserette, receptie, fietsverhuur.</p></div>
-<div class="card"><h3>🏖️ Strand</h3><p>Directe toegang vanaf de camping.</p></div>
+<p><a href="docs/Campingreservering_Playa_Montroig.pdf" target="_blank">📄 Campingreservering</a></p>
+<p><a href="docs/Plattegrond_Playa_Montroig.pdf" target="_blank">🗺️ Officiële plattegrond</a></p>
 </div>
 </section>
 </main>
