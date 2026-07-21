@@ -1,26 +1,42 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='css/style.css'><title>ReisKompas v92</title></head>
-<body><header><h1>ReisKompas v92</h1></header>
+<title>ReisKompas v93</title>
+<link rel='stylesheet' href='css/style.css'>
+</head><body>
+<header><h1>ReisKompas v93</h1><p id='cd'></p></header>
+<nav>
+<button onclick="show('home')">Dashboard</button>
+<button onclick="show('plan')">Planning</button>
+<button onclick="show('docs')">Documenten</button>
+<button onclick="show('camp')">Camping</button>
+</nav>
 <main>
+<section id='home'>
+<div class='card'><h2>Vakantie Spanje 2026</h2>
+<p>Camping Playa Montroig Resort</p>
+<p>02-08-2026 t/m 16-08-2026</p></div>
+</section>
+
+<section id='plan' hidden>
+<div class='card'><h2>14-daagse planning</h2><ol id='days'></ol></div>
+</section>
+
+<section id='docs' hidden>
+<div class='card'><h2>Documentencentrum</h2><div id='doclist'></div></div>
+</section>
+
+<section id='camp' hidden>
 <div class='card'>
-<h2>Campingreservering</h2>
-<p>Playa Montroig Camping Resort</p>
+<h2>Camping</h2>
 <ul>
 <li>Premium Deluxe</li>
-<li>2 t/m 16 augustus 2026</li>
 <li>14 nachten</li>
-<li>Referentie: O20251007DEBIE17443332</li>
-</ul>
-<p><a href="docs/Campingreservering_Playa_Montroig.pdf" target="_blank">📄 Open campingreservering (PDF)</a></p>
-</div>
-<div class='card'>
-<h2>Documentencentrum</h2>
-<ul>
-<li>✅ Campingreservering geïntegreerd</li>
-<li>Hotelreservering (toe te voegen)</li>
-<li>Verzekering</li>
-<li>Caravanpapieren</li>
+<li>Zwembad</li>
+<li>Restaurant</li>
+<li>Supermarkt</li>
 </ul>
 </div>
-</main></body></html>
+</section>
+</main>
+<script src='js/app.js'></script>
+</body></html>

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Campingreservering",
+    "file": "docs/Campingreservering_Playa_Montroig.pdf",
+    "status": "Beschikbaar"
+  },
+  {
+    "name": "Hotelreservering",
+    "file": "",
+    "status": "Nog toevoegen"
+  },
+  {
+    "name": "Verzekering",
+    "file": "",
+    "status": "Nog toevoegen"
+  },
+  {
+    "name": "Caravanpapieren",
+    "file": "",
+    "status": "Nog toevoegen"
+  }
+]
