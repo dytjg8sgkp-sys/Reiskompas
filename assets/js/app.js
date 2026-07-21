@@ -1,16 +1,17 @@
 
-async function loadTrips(){
- const c=document.getElementById('tripContainer');
- if(!c) return;
- const data=await (await fetch('../assets/data/dagtrips.json')).json();
- c.innerHTML='';
- data.forEach(t=>{
-  c.innerHTML+=`<div class="card">
-  <h3>${t.naam}</h3>
-  <p><b>Afstand:</b> ${t.afstand}<br><b>Duur:</b> ${t.duur}</p>
-  <p>${t.tip}</p>
-  <a class="btn" target="_blank" href="https://maps.apple.com/?q=${encodeURIComponent(t.naam)}">Open in Apple Maps</a>
-  </div>`;
+async function loadData(file,target,kind){
+ const el=document.getElementById(target); if(!el) return;
+ const data=await (await fetch('../assets/data/'+file)).json();
+ el.innerHTML='';
+ data.forEach(i=>{
+   let title=i.naam;
+   let sub=i.plaats||i.type||'';
+   let tip=i.tip||'';
+   el.innerHTML+=`<div class="card"><h3>${title}</h3><p>${sub}</p><p>${tip}</p>
+   <a class="btn" target="_blank" href="https://maps.apple.com/?q=${encodeURIComponent(title)}">Apple Maps</a></div>`;
  });
 }
-window.addEventListener('load',loadTrips);
+window.addEventListener('load',()=>{
+ loadData('stranden.json','beaches');
+ loadData('activiteiten.json','activities');
+});
