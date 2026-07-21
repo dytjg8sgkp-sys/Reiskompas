@@ -1,19 +1,10 @@
-
 const pages=document.querySelectorAll('.page');
-document.querySelectorAll('#tabs button').forEach(b=>{
- b.onclick=()=>{
-   pages.forEach(p=>p.hidden=true);
-   document.getElementById(b.dataset.p).hidden=false;
-   document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('active'));
-   b.classList.add('active');
- };
+document.querySelectorAll('nav button').forEach(b=>{
+ b.onclick=()=>{pages.forEach(p=>p.hidden=true);document.getElementById(b.dataset.page).hidden=false;
+ document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');};
 });
-document.querySelector('#tabs button').click();
-const d=Math.max(0,Math.ceil((new Date('2026-08-02')-new Date())/86400000));
-countdown.textContent='Nog '+d+' dagen tot vertrek.';
-savePlace.onclick=()=>{
- localStorage.setItem('campPlace',place.value);
- alert('Kampeerplaats opgeslagen');
-};
-const cp=localStorage.getItem('campPlace');
-if(cp) place.value=cp;
+document.querySelector('nav button').click();
+save.onclick=()=>{localStorage.place=place.value;saved.textContent='Opgeslagen: '+place.value;}
+place.value=localStorage.place||'';saved.textContent=place.value?'Opgeslagen: '+place.value:'';
+notes.value=localStorage.notes21||'';
+notes.oninput=()=>localStorage.notes21=notes.value;

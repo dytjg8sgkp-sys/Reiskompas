@@ -1,78 +1,64 @@
-<!doctype html><html lang="nl"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ReisKompas 2.0</title>
-<link rel="stylesheet" href="css/style.css"></head><body>
-<header><h1>🏕️ ReisKompas 2.0</h1><p>Vakantie Spanje 2026</p></header>
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>ReisKompas 2.1</title>
+<link rel='stylesheet' href='css/style.css'>
+</head><body>
+<header><h1>🏕️ ReisKompas 2.1</h1><p>Interactieve Campingmodule</p></header>
 
-<nav id="tabs">
-<button data-p="dashboard">Dashboard</button>
-<button data-p="route">Route</button>
-<button data-p="planning">Planning</button>
-<button data-p="camping">Camping</button>
-<button data-p="restaurants">Restaurants</button>
-<button data-p="docs">Documenten</button>
+<nav>
+<button data-page="kaart">Kaart</button>
+<button data-page="voorzieningen">Voorzieningen</button>
+<button data-page="planning">Planning</button>
+<button data-page="info">Info</button>
 </nav>
 
-<main>
-<section id="dashboard" class="page">
-<h2>Dashboard</h2>
+<section id="kaart" class="page">
 <div class="card">
-<p><b>Reis:</b> 2 t/m 16 augustus 2026</p>
-<p id="countdown"></p>
+<h2>Campingkaart</h2>
+<p>Gebruik de HD-plattegrond als referentie. De kaart kan later worden vervangen door een interactieve afbeelding met pinch-to-zoom.</p>
+<a class="btn" href="docs/Campingkaart_HD.pdf" target="_blank">Open campingkaart</a>
+<h3>Eigen kampeerplaats</h3>
+<input id="place" placeholder="Bijv. 145">
+<button id="save">Opslaan</button>
+<p id="saved"></p>
 </div>
 </section>
 
-<section id="route" class="page" hidden>
-<h2>Route</h2>
+<section id="voorzieningen" class="page" hidden>
 <div class="card">
-<ul>
-<li>Dag 1: België → La Jonquera</li>
-<li>Dag 2: La Jonquera → Playa Montroig</li>
-<li>Terugreis volgens dezelfde opzet</li>
-</ul>
+<h2>Voorzieningen</h2>
+<div class="grid">
+<button>🏊 Garden Pool</button>
+<button>💦 Splash Pool</button>
+<button>🍽️ La Terrassa</button>
+<button>🍕 Espai Grill</button>
+<button>🛒 Supermarkt</button>
+<button>🏖️ Strand</button>
+<button>🚿 Sanitair</button>
+<button>🏥 Medische post</button>
+</div>
 </div>
 </section>
 
 <section id="planning" class="page" hidden>
-<h2>14-daagse planning</h2>
-<div class="card"><textarea style="width:100%;height:220px" placeholder="Notities per dag..."></textarea></div>
-</section>
-
-<section id="camping" class="page" hidden>
-<h2>Camping</h2>
 <div class="card">
-<p>Kampeerplaats: <input id="place" placeholder="Nog onbekend"> <button id="savePlace">Opslaan</button></p>
-<ul>
-<li>🏊 Garden Pool</li>
-<li>💦 Splash Pool</li>
-<li>🍽️ Restaurants</li>
-<li>🏖️ Strand</li>
-<li>🛒 Supermarkt</li>
-</ul>
-<p><b>Opmerking:</b> De interactieve kaart wordt toegevoegd zodra een hogere resolutie kaartafbeelding beschikbaar is.</p>
+<h2>Dagplanning</h2>
+<textarea id="notes" placeholder="Plannen voor vandaag..."></textarea>
 </div>
 </section>
 
-<section id="restaurants" class="page" hidden>
-<h2>Restaurants</h2>
+<section id="info" class="page" hidden>
 <div class="card">
+<h2>Roadmap</h2>
 <ul>
-<li>La Terrassa</li>
-<li>Espai Grill</li>
-<li>Tropical</li>
-<li>Pai-Pai Cocktail Bar</li>
+<li>Interactieve HD-kaart</li>
+<li>Klikbare hotspots</li>
+<li>Wandelroutes vanaf kampeerplaats</li>
+<li>Offline kaart</li>
+<li>Restaurants gekoppeld aan de kaart</li>
 </ul>
 </div>
 </section>
 
-<section id="docs" class="page" hidden>
-<h2>Documenten</h2>
-<div class="card">
-<p>✔ Campingreservering</p>
-<p>✔ Campingplattegrond</p>
-<p>Voeg hier later PDF's toe aan de map <code>docs/</code>.</p>
-</div>
-</section>
-</main>
 <script src="js/app.js"></script>
 </body></html>
