@@ -1,44 +1,30 @@
 
-<!doctype html>
-<html lang="nl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>ReisKompas v62</title>
-</head>
-<body>
-<header>
-<h1>🇪🇸 ReisKompas v62</h1>
-<p>Budgetregistratie</p>
-</header>
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v63</title>
+</head><body>
+<header><h1>🇪🇸 ReisKompas v63</h1><p>Budgetbeheer uitgebreid</p></header>
 <main>
-
-<div class="card">
-<h2>➕ Nieuwe uitgave</h2>
-<select id="category">
-<option>Brandstof</option>
-<option>Tol</option>
-<option>Camping</option>
-<option>Boodschappen</option>
-<option>Restaurant</option>
-<option>Activiteiten</option>
+<div class='card'>
+<h2>🎯 Totaalbudget</h2>
+<input id='budget' type='number' placeholder='Budget in euro'>
+<button onclick='setBudget()'>Opslaan</button>
+</div>
+<div class='card'>
+<h2>➕ Uitgave</h2>
+<select id='category'>
+<option>Brandstof</option><option>Tol</option><option>Camping</option>
+<option>Boodschappen</option><option>Restaurant</option><option>Activiteit</option>
 </select><br>
-<input id="description" placeholder="Omschrijving"><br>
-<input id="amount" type="number" step="0.01" placeholder="Bedrag"><br>
-<button onclick="addExpense()">Toevoegen</button>
+<input id='description' placeholder='Omschrijving'>
+<input id='amountInput' type='number' step='0.01' placeholder='Bedrag'>
+<button onclick='addExp()'>Toevoegen</button>
 </div>
-
-<div class="card">
-<h2>💶 Uitgaven</h2>
-<table>
-<thead><tr><th>Categorie</th><th>Omschrijving</th><th>Bedrag</th></tr></thead>
-<tbody id="rows"></tbody>
-</table>
-<h3>Totaal: <span id="total">€ 0.00</span></h3>
+<div class='card'>
+<table><thead><tr><th>Categorie</th><th>Omschrijving</th><th>Bedrag</th><th></th></tr></thead>
+<tbody id='rows'></tbody></table>
+<h3>Uitgegeven: <span id='spent'>€0.00</span></h3>
+<h3>Resterend: <span id='left'>€0.00</span></h3>
 </div>
-
-<script src="assets/js/app.js"></script>
-</main>
-</body>
-</html>
+<script src='assets/js/app.js'></script>
+</main></body></html>
