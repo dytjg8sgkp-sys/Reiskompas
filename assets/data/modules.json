@@ -10,14 +10,14 @@
     "desc": "Playa Montroig"
   },
   {
+    "icon": "🍽️",
+    "name": "Restaurants",
+    "desc": "Favorieten"
+  },
+  {
     "icon": "🗺️",
     "name": "Dagtrips",
     "desc": "Barcelona"
-  },
-  {
-    "icon": "🍽️",
-    "name": "Restaurants",
-    "desc": "Aanraders"
   },
   {
     "icon": "🏖️",
@@ -47,6 +47,6 @@
   {
     "icon": "💶",
     "name": "Budget",
-    "desc": "Uitgaven"
+    "desc": "Kosten"
   }
 ]
