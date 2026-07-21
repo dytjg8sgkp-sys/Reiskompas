@@ -1,49 +1,34 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v20</title></head>
+<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v21</title></head>
 <body>
-<header><h1>🇪🇸 ReisKompas v20</h1></header>
+<header>
+<h1>🇪🇸 ReisKompas v21</h1>
+<p>Nog <strong id="days">...</strong> dagen tot vertrek</p>
+<div class="progress"><div></div></div>
+<div class="chips">
+<span class="chip">🚗 Caravan</span>
+<span class="chip">📍 La Jonquera</span>
+<span class="chip">🏕️ Playa Montroig</span>
+</div>
+</header>
 <main>
-<div class='hero'>
-<h2>Nog <span id='days'>...</span> dagen tot vertrek</h2>
-<div class='progress'><div></div></div>
-<p><strong id='count'>0</strong> modules • Voorbereiding 65%</p>
+<div class="hero">
+<strong id="count">0</strong> modules beschikbaar • Voorbereiding 72%
 </div>
 
-<div id='grid' class='grid'></div>
+<div id="modules" class="grid"></div>
 
-<div class='row'>
-<div class='card'>
-<h3>📍 Volgende stap</h3>
-<p>Vertrekhotel bij La Jonquera bevestigen.</p>
-</div>
-<div class='card'>
-<h3>🌤️ Weer</h3>
-<p>Ruimte voor live weersverwachting.</p>
-</div>
+<div class="row">
+<div class="card"><h3>📍 Volgende stap</h3><p>Hotel in La Jonquera bevestigen.</p></div>
+<div class="card"><h3>🛣️ Route</h3><p>Nederland → La Jonquera → Playa Montroig.</p></div>
 </div>
 
-<div class='row'>
-<div class='card'>
-<h3>💶 Budget</h3>
-<p>Brandstof • Tol • Camping • Uitgaven</p>
-</div>
-<div class='card'>
-<h3>📝 Vandaag</h3>
-<ul>
-<li>☑️ Caravan controleren</li>
-<li>⬜ Paspoorten</li>
-<li>⬜ Reserveringen nalopen</li>
-</ul>
-</div>
+<div class="row">
+<div class="card"><h3>💶 Budget</h3><p>Brandstof • Tol • Camping • Restaurants</p></div>
+<div class="card"><h3>📝 Vandaag</h3><ul><li>☑ Caravan</li><li>⬜ Paspoorten</li><li>⬜ Verzekering</li></ul></div>
 </div>
 </main>
-<nav>
-<a href='#'>🏠</a>
-<a href='#'>🚗</a>
-<a href='#'>📅</a>
-<a href='#'>❤️</a>
-<a href='#'>⚙️</a>
-</nav>
-<script src='assets/js/app.js'></script>
+<nav><a>🏠</a><a>🗺️</a><a>📅</a><a>❤️</a><a>⚙️</a></nav>
+<script src="assets/js/app.js"></script>
 </body></html>
