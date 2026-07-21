@@ -1,32 +1,47 @@
 {
-  "packing": [
-    "Paspoorten",
-    "Rijbewijs",
-    "Caravanpapieren",
-    "Kentekenbewijs",
-    "EHBO",
-    "Zwemkleding",
-    "Laders",
-    "Koelkast vullen"
+  "countdown": "Vertrek richting Spanje: zomer 2026",
+  "days": [
+    [
+      "02 aug",
+      "Aankomst"
+    ],
+    [
+      "03 aug",
+      "Camping"
+    ],
+    [
+      "04 aug",
+      "Strand"
+    ],
+    [
+      "05 aug",
+      "Cambrils"
+    ],
+    [
+      "06 aug",
+      "Tarragona"
+    ],
+    [
+      "07 aug",
+      "Rust"
+    ],
+    [
+      "08 aug",
+      "PortAventura"
+    ],
+    [
+      "09 aug",
+      "Barcelona"
+    ],
+    [
+      "10-16 aug",
+      "Vrij in te vullen"
+    ]
   ],
-  "stops": [
-    {
-      "naam": "Vertrek Nederland",
-      "afstand": "0 km"
-    },
-    {
-      "naam": "Hotel La Jonquera",
-      "afstand": "±1350 km"
-    },
-    {
-      "naam": "Camping Playa Montroig",
-      "afstand": "±1550 km"
-    }
-  ],
-  "favorites": [
-    "Playa Cristal",
-    "Can Salvador",
-    "PortAventura",
-    "Barcelona"
+  "docs": [
+    "Campingreservering",
+    "Hotel La Jonquera",
+    "Verzekering",
+    "Caravanpapieren"
   ]
 }

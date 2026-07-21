@@ -1,14 +1,18 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='stylesheet' href='assets/css/style.css'>
-<title>ReisKompas v77</title></head>
+<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v78</title></head>
 <body>
-<header><h1>🇪🇸 ReisKompas v77</h1><p>Vertrek & vakantieoverzicht</p></header>
-<main><div class='grid'>
-<div class='card'><h2>🧳 Paklijst</h2><div id='packing'></div></div>
-<div class='card'><h2>🚗 Reisroute</h2><ul id='route'></ul></div>
-<div class='card'><h2>⭐ Favorieten</h2><ul id='fav'></ul></div>
-<div class='card'><h2>📌 Volgende uitbreidingen</h2><ul><li>Interactieve campingplattegrond</li><li>Live weer</li><li>Documentviewer</li><li>Offline kaarten</li></ul></div>
+<header><h1>🇪🇸 ReisKompas v78</h1></header>
+<nav>
+<a href="#">Dashboard</a><a href="#">Planning</a><a href="#">Route</a><a href="#">Camping</a><a href="#">Documenten</a>
+</nav>
+<main>
+<div class='card'><h2>⏳ Voorbereiding</h2><div class='progress'><div class='bar'></div></div><p id='countdown'></p></div>
+<div class='grid'>
+<div class='card'><h2>📅 Reisplanning</h2><table id='plan'></table></div>
+<div class='card'><h2>📄 Documenten</h2><ul id='docs'></ul><p>Klaar om reserveringen te koppelen.</p></div>
+<div class='card'><h2>🗺️ Dashboard</h2><ul><li>Camping Playa Montroig</li><li>Hotel La Jonquera</li><li>Route</li><li>Paklijst</li></ul></div>
+<div class='card'><h2>🌤️ Weer</h2><p>Module voorbereid voor live weerinformatie.</p></div>
 </div>
 <script src='assets/js/app.js'></script>
 </main></body></html>
