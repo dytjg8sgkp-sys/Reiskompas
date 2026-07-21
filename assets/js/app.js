@@ -1,1 +1,1 @@
-const d=Math.ceil((new Date('2026-07-18')-new Date())/86400000);document.getElementById('countdown').textContent='Nog '+d+' dagen';if('serviceWorker' in navigator){navigator.serviceWorker.register('./service-worker.js');}
+const d=Math.max(0,Math.ceil((new Date('2026-07-18')-new Date())/86400000));document.getElementById('countdown').textContent='Nog '+d+' dagen';

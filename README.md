@@ -1,1 +1,1 @@
-# ReisKompas Starter
+ReisKompas v0.2
