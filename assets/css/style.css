@@ -1,14 +1,14 @@
 
 :root{--bg:#08111f;--card:#18263b;--text:#fff;--accent:#38bdf8}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,Arial;background:var(--bg);color:var(--text)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,sans-serif}
 header{padding:24px;background:linear-gradient(135deg,#2563eb,#22d3ee)}
-main{max-width:1100px;margin:auto;padding:20px 20px 100px}
-.hero,.card,.tile{background:var(--card);border-radius:20px;padding:18px}
-.progress{height:12px;background:#334155;border-radius:999px;overflow:hidden;margin:12px 0}.progress>div{height:100%;width:95%;background:#22c55e}
+main{max-width:1100px;margin:auto;padding:20px 20px 90px}
+.hero,.card,.tile{background:var(--card);border-radius:18px;padding:18px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
-.tile{text-decoration:none;color:#fff;display:block}
-.icon{font-size:2rem}.widgets{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-top:18px}
-.stack{display:grid;gap:14px}.badge{display:inline-block;background:#0f3a5b;padding:5px 10px;border-radius:999px;margin:3px}
-table{width:100%;border-collapse:collapse}td{padding:6px 0;border-bottom:1px solid #334155}
-nav{position:fixed;left:12px;right:12px;bottom:12px;background:#111827;border-radius:18px;padding:12px;display:flex;justify-content:space-around}
-nav a{color:#fff;text-decoration:none}@media(max-width:800px){.widgets{grid-template-columns:1fr}}
+.tile{text-decoration:none;color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}.kpi{background:#132033;padding:14px;border-radius:16px;text-align:center}
+.progress{height:10px;background:#334155;border-radius:999px;overflow:hidden}.progress div{height:100%;width:97%;background:#22c55e}
+.widgets{display:grid;grid-template-columns:2fr 1fr;gap:14px}
+@media(max-width:800px){.widgets,.kpis{grid-template-columns:1fr}}
+nav{position:fixed;bottom:12px;left:12px;right:12px;background:#111827;border-radius:18px;padding:12px;display:flex;justify-content:space-around}
+nav a{color:#fff;text-decoration:none}
