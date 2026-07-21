@@ -1,61 +1,64 @@
 <!doctype html><html lang='nl'><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
 <link rel='stylesheet' href='assets/css/style.css'>
-<title>ReisKompas v22</title></head>
-<body>
+<title>ReisKompas v23</title>
+</head><body>
 <header>
-<h1>🇪🇸 ReisKompas v22</h1>
+<h1>🇪🇸 ReisKompas v23</h1>
 <p>Nog <strong id="days">...</strong> dagen tot vertrek</p>
 <div class="progress"><div></div></div>
 </header>
 
 <main>
 <div class="hero">
-<h2>Vakantie Dashboard</h2>
-<p><strong id="count">0</strong> modules • Voorbereiding 78%</p>
+<h2>Vakantie-overzicht</h2>
+<p><strong id="moduleCount">0</strong> modules • Voorbereiding 82%</p>
+<div>
+<span class="pill">🚗 Caravan</span>
+<span class="pill">📍 La Jonquera</span>
+<span class="pill">🏕️ Playa Montroig</span>
+<span class="pill">☀️ Zomervakantie 2026</span>
+</div>
 </div>
 
-<div id="modules" class="grid"></div>
-
-<div class="row">
-<div class="card">
-<h3>📍 Reisoverzicht</h3>
-<p>🏠 Nederland → 🇫🇷 La Jonquera → 🏕️ Playa Montroig</p>
-</div>
-<div class="card">
-<h3>🚗 Rijdag</h3>
-<p>Dag 1: overnachting La Jonquera<br>Dag 2: aankomst camping.</p>
-</div>
-</div>
+<div id="grid" class="grid"></div>
 
 <div class="row">
 <div class="card">
-<h3>🌤️ Weer</h3>
-<p>Widget voorbereid voor live weersverwachting.</p>
+<h3>🛣️ Route</h3>
+<p>Nederland → La Jonquera → Playa Montroig.</p>
 </div>
+<div class="card">
+<h3>📍 Volgende stap</h3>
+<p>Reserveringen controleren en caravan definitief inpakken.</p>
+</div>
+</div>
+
+<div class="row">
 <div class="card">
 <h3>💶 Budget</h3>
-<p>Brandstof • Tol • Hotel • Camping • Restaurants</p>
+<p>Brandstof • Tol • Hotel • Camping • Restaurants.</p>
 </div>
-</div>
-
 <div class="card">
-<h3>📝 Acties</h3>
+<h3>📝 Laatste controles</h3>
 <ul>
-<li>☑ Hotel gekozen</li>
-<li>☑ Route bepaald</li>
-<li>⬜ Caravan inpakken</li>
-<li>⬜ Documenten controleren</li>
+<li>☑ Hotel bevestigd</li>
+<li>☑ Route gepland</li>
+<li>⬜ Paspoorten</li>
+<li>⬜ Verzekeringspapieren</li>
 </ul>
+</div>
 </div>
 </main>
 
 <nav>
 <a href="#">🏠</a>
-<a href="#">🚗</a>
+<a href="#">🗺️</a>
 <a href="#">📅</a>
 <a href="#">❤️</a>
 <a href="#">⚙️</a>
 </nav>
+
 <script src="assets/js/app.js"></script>
 </body></html>

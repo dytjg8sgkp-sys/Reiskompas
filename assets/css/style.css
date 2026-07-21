@@ -1,14 +1,16 @@
 
-:root{--bg:#0a1220;--card:#18263b;--text:#fff;--accent:#38bdf8}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,Arial,sans-serif;background:var(--bg);color:var(--text)}
+:root{--bg:#09111d;--card:#18273d;--text:#fff;--accent:#38bdf8}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,Arial,sans-serif;background:var(--bg);color:var(--text)}
 header{padding:24px;background:linear-gradient(135deg,#2563eb,#22d3ee)}
 main{padding:18px 18px 100px}
 .hero,.card,.tile{background:var(--card);border-radius:20px;padding:18px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px}
 .tile{text-decoration:none;color:#fff;display:block}
 .icon{font-size:2rem}.muted{opacity:.75;font-size:.9rem}
 .progress{height:12px;background:#334155;border-radius:999px;overflow:hidden;margin-top:10px}
-.progress>div{height:100%;width:78%;background:#22c55e}
+.progress div{height:100%;width:82%;background:#22c55e}
 .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
+.pill{display:inline-block;background:#0f3a5b;border-radius:999px;padding:6px 10px;margin:4px;font-size:.85rem}
 nav{position:fixed;left:12px;right:12px;bottom:12px;background:#111827;border-radius:18px;padding:12px;display:flex;justify-content:space-around}
-nav a{color:#fff;text-decoration:none}
+nav a{text-decoration:none;color:#fff}
