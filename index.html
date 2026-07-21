@@ -1,29 +1,51 @@
 <!doctype html><html lang='nl'><head>
 <meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas 2.2</title>
-<link rel='stylesheet' href='css/style.css'></head>
-<body>
-<header><h1>🏕️ ReisKompas 2.2</h1><p>Camping Navigator</p></header>
-<div class='layout'>
-<aside class='panel'>
-<h2>Navigatie</h2>
-<input id='place' placeholder='Kampeerplaats'>
-<button id='save'>Kampeerplaats opslaan</button>
-<h3>Bestemmingen</h3>
-<div class='list'>
-<button data-d='Receptie'>📍 Receptie</button>
-<button data-d='Garden Pool'>🏊 Garden Pool</button>
-<button data-d='Splash Pool'>💦 Splash Pool</button>
-<button data-d='Supermarkt'>🛒 Supermarkt</button>
-<button data-d='La Terrassa'>🍽️ La Terrassa</button>
-<button data-d='Strand'>🏖️ Strand</button>
+<title>ReisKompas 2.3</title>
+<link rel='stylesheet' href='css/style.css'>
+</head><body>
+<header><h1>🏕️ ReisKompas 2.3</h1><p>Camping Navigator+</p></header>
+
+<div class="container">
+<aside>
+<h2>Navigator</h2>
+<input id="place" placeholder="Kampeerplaats">
+<button id="save">💾 Opslaan</button>
+
+<h3>Favorieten</h3>
+<div id="buttons">
+<button data-name="📍 Receptie">📍 Receptie</button>
+<button data-name="🏊 Garden Pool">🏊 Garden Pool</button>
+<button data-name="💦 Splash Pool">💦 Splash Pool</button>
+<button data-name="🛒 Supermarkt">🛒 Supermarkt</button>
+<button data-name="🍽️ La Terrassa">🍽️ La Terrassa</button>
+<button data-name="🏖️ Strand">🏖️ Strand</button>
 </div>
-<p><b>Bestemming:</b> <span id='dest'>-</span></p>
+
+<div class="card">
+<b>Gekozen bestemming</b>
+<p id="destination">Nog geen</p>
+</div>
+
+<div class="card">
+<b>Checklist</b>
+<label><input type="checkbox" id="tow"> Caravan aangekoppeld</label><br>
+<label><input type="checkbox" id="docs"> Documenten mee</label><br>
+<label><input type="checkbox" id="fridge"> Koelkast aan</label>
+</div>
 </aside>
-<main class='viewer'>
-<iframe src='docs/Campingkaart_HD.pdf'></iframe>
-<p class='hint'>Volgende stap: vervang de PDF door een hoge resolutie afbeelding voor pinch-to-zoom en klikbare hotspots.</p>
+
+<main>
+<div class="toolbar">
+<button onclick="zoom(-0.1)">➖</button>
+<button onclick="zoom(0.1)">➕</button>
+<span id="zoomtxt">100%</span>
+</div>
+<div class="viewer" id="viewer">
+<iframe id="map" src="docs/Campingkaart_HD.pdf"></iframe>
+</div>
+<p class="note">Zoom werkt momenteel als viewer-schaal. In een volgende versie kan dit worden vervangen door een echte interactieve kaart met hotspots.</p>
 </main>
 </div>
-<script src='js/app.js'></script>
+
+<script src="js/app.js"></script>
 </body></html>
