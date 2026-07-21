@@ -1,1 +1,1 @@
-ReisKompas v0.2
+ReisKompas Design Release
