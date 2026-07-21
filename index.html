@@ -1,17 +1,49 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="css/style.css">
-<title>ReisKompas v82</title></head><body>
-<header><h1>ReisKompas v82</h1><p>Vakantie Spanje 2026</p></header>
+<!doctype html><html><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='manifest' href='manifest.json'>
+<link rel='stylesheet' href='css/style.css'>
+<title>ReisKompas v83</title></head><body>
+<header><h1>ReisKompas v83</h1><div id='count'></div></header>
 <nav>
-<button onclick="show('dash')">Dashboard</button>
-<button onclick="show('route')">Route</button>
-<button onclick="show('camp')">Camping</button>
-<button onclick="show('docs')">Documenten</button>
+<button onclick="page('dash')">Dashboard</button>
+<button onclick="page('trip')">Reis</button>
+<button onclick="page('camp')">Camping</button>
+<button onclick="page('plan')">Planning</button>
+<button onclick="page('docs')">Docs</button>
 </nav>
 <main>
-<section id="dash"><h2>Dashboard</h2><p>Aankomst camping: 2 augustus 2026</p><ul><li>Hotel: La Jonquera</li><li>Camping: Playa Montroig</li></ul></section>
-<section id="route" hidden><h2>Route</h2><ol><li>Thuis → La Jonquera</li><li>La Jonquera → Playa Montroig</li></ol></section>
-<section id="camp" hidden><h2>Camping</h2><p>Playa Montroig Camping Resort</p><p>Verblijf: 2 t/m 16 augustus 2026</p></section>
-<section id="docs" hidden><h2>Documenten</h2><p>Plaats hier de camping- en hotelreserveringen.</p></section>
+<section id='dash'>
+<h2>Dashboard</h2>
+<div class='card'>Vertrek → Hotel La Jonquera → Camping Playa Montroig</div>
+<div class='card'>Verblijf camping: <b>2 t/m 16 augustus 2026</b></div>
+</section>
+<section id='trip' hidden>
+<h2>Reis</h2>
+<ul>
+<li>Dag 1: Nederland → Hotel omgeving La Jonquera</li>
+<li>Dag 2: Hotel → Camping Playa Montroig</li>
+</ul>
+</section>
+<section id='camp' hidden>
+<h2>Camping</h2>
+<ul>
+<li>Camping Playa Montroig Resort</li>
+<li>Premium Deluxe</li>
+<li>14 nachten</li>
+</ul>
+</section>
+<section id='plan' hidden>
+<h2>14-daagse planning</h2>
+<ol id='days'></ol>
+</section>
+<section id='docs' hidden>
+<h2>Documenten</h2>
+<ul>
+<li>Campingreservering</li>
+<li>Hotelreservering</li>
+<li>Verzekering (toe te voegen)</li>
+<li>Rijbewijzen</li>
+</ul>
+</section>
 </main>
-<script src="js/app.js"></script></body></html>
+<script src='js/app.js'></script></body></html>
