@@ -1,53 +1,28 @@
-<!doctype html><html lang='nl'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas v85</title>
-<link rel='manifest' href='manifest.json'><link rel='stylesheet' href='css/style.css'></head>
-<body><header><h1>ReisKompas v85</h1><div id='count'></div></header>
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>ReisKompas v86</title>
+<link rel='manifest' href='manifest.json'>
+<link rel='stylesheet' href='css/style.css'>
+</head><body>
+<header><h1>ReisKompas v86</h1><div id='count'></div></header>
 <nav>
 <button onclick="show('home')">Home</button>
+<button onclick="show('booking')">Reservering</button>
 <button onclick="show('route')">Route</button>
-<button onclick="show('planning')">Planning</button>
-<button onclick="show('fav')">Favorieten</button>
-<button onclick="show('docs')">Docs</button>
+<button onclick="show('notes')">Notities</button>
 </nav>
 <main>
 <section id='home'>
-<div class='card'><h2>Camping Playa Montroig</h2><p>2 t/m 16 augustus 2026</p><p>Premium Deluxe • 14 nachten</p></div>
-<div class='grid'>
-<div class='card'><b>Hotel</b><br>Omgeving La Jonquera</div>
-<div class='card'><b>Status</b><br>Klaar voor vertrek</div>
-</div>
+<div class='card'><h2>Vakantieoverzicht</h2><p>Welkom bij ReisKompas.</p></div>
+<div class='card'><strong>Checklist voortgang</strong><progress id='prog' max='5' value='0'></progress></div>
 </section>
-
-<section id='route' hidden>
-<h2>Route</h2>
-<table>
-<tr><th>Traject</th><th>Indicatie</th></tr>
-<tr><td>Thuis → La Jonquera</td><td>± eerste reisdag</td></tr>
-<tr><td>La Jonquera → Playa Montroig</td><td>± 2 uur</td></tr>
-</table>
+<section id='booking' hidden><h2>Reservering</h2><div id='bookingCard' class='card'></div></section>
+<section id='route' hidden><h2>Route</h2><div class='card'>
+<table><tr><th>Traject</th><th>Opmerking</th></tr>
+<tr><td>Thuis → La Jonquera</td><td>Eerste reisdag</td></tr>
+<tr><td>La Jonquera → Playa Montroig</td><td>Ongeveer 2 uur rijden</td></tr>
+</table></div></section>
+<section id='notes' hidden><h2>Notities</h2>
+<textarea id='memo' placeholder='Eigen notities...' style='width:100%;height:180px'></textarea>
 </section>
-
-<section id='planning' hidden>
-<h2>14-daagse planning</h2>
-<ul id='days'></ul>
-</section>
-
-<section id='fav' hidden>
-<h2>Favorieten</h2>
-<h3>Restaurants</h3>
-<ul><li>Toe te voegen</li></ul>
-<h3>Stranden</h3>
-<ul><li>Toe te voegen</li></ul>
-</section>
-
-<section id='docs' hidden>
-<h2>Documenten</h2>
-<ul>
-<li>Campingreservering</li>
-<li>Hotelreservering</li>
-<li>Verzekering</li>
-<li>Rijbewijs / ID</li>
-</ul>
-</section>
-</main>
-<script src='js/app.js'></script></body></html>
+</main><script src='js/app.js'></script></body></html>

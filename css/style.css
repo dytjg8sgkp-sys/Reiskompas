@@ -1,4 +1,4 @@
-body{margin:0;font-family:system-ui;background:#eef2f5}header{background:#1976d2;color:#fff;padding:1rem}
-nav{display:flex;overflow:auto;background:#fff}nav button{flex:1;border:0;background:#fff;padding:.9rem}
-main{padding:1rem}.card{background:#fff;border-radius:12px;padding:1rem;margin-bottom:1rem;box-shadow:0 1px 4px rgba(0,0,0,.15)}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}table{width:100%;background:#fff;border-collapse:collapse}td,th{border:1px solid #ddd;padding:.5rem}
+body{margin:0;font-family:system-ui;background:#eef3f8}header{background:#0d6efd;color:#fff;padding:1rem}
+nav{display:flex;background:#fff}nav button{flex:1;padding:.9rem;border:0;background:#fff}
+main{padding:1rem}.card{background:#fff;padding:1rem;border-radius:12px;box-shadow:0 1px 4px #0002;margin-bottom:1rem}
+table{width:100%;border-collapse:collapse}td,th{border:1px solid #ddd;padding:.5rem}progress{width:100%}
