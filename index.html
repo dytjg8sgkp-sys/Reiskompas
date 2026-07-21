@@ -1,14 +1,17 @@
-<!doctype html><html lang="nl"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>ReisKompas v81</title></head><body>
-<header><h1>🇪🇸 ReisKompas v81</h1><p>Route & vertrekassistent</p></header>
-<nav><a>Dashboard</a><a>Route</a><a>Planning</a><a>Camping</a><a>Documenten</a></nav>
-<main><div class="grid">
-<div class="card"><h2>🏕️ Reisoverzicht</h2><div id="summary"></div></div>
-<div class="card"><h2>🚗 Route</h2><div id="route"></div></div>
-<div class="card"><h2>✅ Vertrekchecklist</h2><div id="checks"></div></div>
-<div class="card"><h2>📍 Volgende stap</h2><p>Voorbereid voor een interactieve kaart met tank-, rust- en overnachtingslocaties.</p></div>
-</div></main>
-<script src="assets/js/app.js"></script>
-</body></html>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="css/style.css">
+<title>ReisKompas v82</title></head><body>
+<header><h1>ReisKompas v82</h1><p>Vakantie Spanje 2026</p></header>
+<nav>
+<button onclick="show('dash')">Dashboard</button>
+<button onclick="show('route')">Route</button>
+<button onclick="show('camp')">Camping</button>
+<button onclick="show('docs')">Documenten</button>
+</nav>
+<main>
+<section id="dash"><h2>Dashboard</h2><p>Aankomst camping: 2 augustus 2026</p><ul><li>Hotel: La Jonquera</li><li>Camping: Playa Montroig</li></ul></section>
+<section id="route" hidden><h2>Route</h2><ol><li>Thuis → La Jonquera</li><li>La Jonquera → Playa Montroig</li></ol></section>
+<section id="camp" hidden><h2>Camping</h2><p>Playa Montroig Camping Resort</p><p>Verblijf: 2 t/m 16 augustus 2026</p></section>
+<section id="docs" hidden><h2>Documenten</h2><p>Plaats hier de camping- en hotelreserveringen.</p></section>
+</main>
+<script src="js/app.js"></script></body></html>
