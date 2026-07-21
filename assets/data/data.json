@@ -1,0 +1,37 @@
+{
+  "days": [
+    {
+      "title": "Dag 1",
+      "tasks": [
+        "Aankomst",
+        "Caravan opzetten",
+        "Boodschappen"
+      ]
+    },
+    {
+      "title": "Dag 2",
+      "tasks": [
+        "Zwembad",
+        "Strand",
+        "Restaurant"
+      ]
+    },
+    {
+      "title": "Dag 3",
+      "tasks": [
+        "Barcelona dagtrip"
+      ]
+    }
+  ],
+  "restaurants": [
+    "Can Salvador",
+    "Friends",
+    "Casa Pepita"
+  ],
+  "pois": [
+    "PortAventura",
+    "Tarragona",
+    "Cambrils",
+    "Playa Cristal"
+  ]
+}
