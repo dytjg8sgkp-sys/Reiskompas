@@ -1,46 +1,18 @@
-<!doctype html><html lang='nl'><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<link rel='manifest' href='manifest.json'>
-<link rel='stylesheet' href='assets/css/style.css'>
-<title>ReisKompas v50</title></head><body>
-<header><h1>🇪🇸 ReisKompas v50</h1><p>Functionele reisassistent</p></header>
-<main>
-<div class='grid'>
-<div class='card'>
-<h2>💶 Budget</h2>
-<input id='budget' placeholder='Totaal budget'>
-<p>Automatisch lokaal opgeslagen.</p>
+<!doctype html><html lang="nl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>ReisKompas v60</title></head><body>
+<header><h1>🇪🇸 ReisKompas v60</h1><p>Eindprototype</p></header>
+<main><div class="grid">
+<div class="card"><h2>🚗 Route</h2><ul id="route"></ul></div>
+<div class="card"><h2>📅 Planning</h2><ul id="days"></ul></div>
+<div class="card"><h2>❤️ Favorieten</h2><ul id="fav"></ul></div>
+<div class="card"><h2>💶 Budget</h2><table><tr><th>Categorie</th><th>Status</th></tr>
+<tr><td>Brandstof</td><td>Voorbereid</td></tr>
+<tr><td>Camping</td><td>Voorbereid</td></tr>
+<tr><td>Activiteiten</td><td>Voorbereid</td></tr></table></div>
+<div class="card"><h2>🌤️ Weer</h2><p>Module voorbereid voor API-koppeling.</p></div>
+<div class="card"><h2>📄 Reserveringen</h2><p>Hotel La Jonquera en Camping Playa Montroig.</p></div>
 </div>
-
-<div class='card'>
-<h2>📝 Reisnotities</h2>
-<textarea id='notes' rows='7' placeholder='Notities'></textarea>
-</div>
-
-<div class='card'>
-<h2>📍 Bestemmingen</h2>
-<ul id='places'></ul>
-</div>
-
-<div class='card'>
-<h2>📄 Reserveringen</h2>
-<ul>
-<li>Hotel La Jonquera</li>
-<li>Camping Playa Montroig</li>
-</ul>
-</div>
-
-<div class='card'>
-<h2>🌤️ Weer</h2>
-<p>Voorbereid voor live weerintegratie.</p>
-</div>
-
-<div class='card'>
-<h2>🗺️ Route</h2>
-<p>Nederland → La Jonquera → Playa Montroig</p>
-<p>Apple Maps en Google Maps kunnen in een volgende versie direct worden gekoppeld.</p>
-</div>
-</div>
-<script src='assets/js/app.js'></script>
-</main>
-</body></html>
+<script src="assets/js/app.js"></script></main></body></html>

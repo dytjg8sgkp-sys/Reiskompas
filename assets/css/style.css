@@ -1,8 +1,7 @@
 
-body{margin:0;font-family:system-ui;background:#08111f;color:#fff}
-header{background:linear-gradient(135deg,#2563eb,#22d3ee);padding:20px}
+body{margin:0;font-family:Arial,sans-serif;background:#0b1220;color:#fff}
+header{padding:24px;background:#1d4ed8}
 main{max-width:1200px;margin:auto;padding:20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.card{background:#18263b;border-radius:14px;padding:16px}
-input,textarea,select{width:100%;padding:8px;margin-top:6px}
-button{padding:10px 14px;border:0;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:#1e293b;padding:16px;border-radius:12px}
+table{width:100%;border-collapse:collapse}td,th{padding:6px;border-bottom:1px solid #334155}
