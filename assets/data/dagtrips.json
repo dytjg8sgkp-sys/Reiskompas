@@ -1,18 +1,26 @@
 [
   {
     "naam": "Barcelona",
-    "afstand": "120 km"
+    "afstand": "120 km",
+    "duur": "Hele dag",
+    "tip": "Sagrada Família & Gotische wijk"
   },
   {
     "naam": "Tarragona",
-    "afstand": "35 km"
+    "afstand": "35 km",
+    "duur": "Halve dag",
+    "tip": "Romeins amfitheater"
   },
   {
     "naam": "Cambrils",
-    "afstand": "12 km"
+    "afstand": "12 km",
+    "duur": "Avond",
+    "tip": "Boulevard en haven"
   },
   {
-    "naam": "Reus",
-    "afstand": "20 km"
+    "naam": "Siurana",
+    "afstand": "55 km",
+    "duur": "Halve dag",
+    "tip": "Bergdorp en uitzicht"
   }
 ]
