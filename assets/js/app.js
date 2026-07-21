@@ -1,21 +1,9 @@
 
 async function init(){
- const d=await (await fetch('assets/data/trip.json')).json();
- document.getElementById('booking').innerHTML=
- `<strong>${d.booking.camping}</strong><br>
- Aankomst: ${d.booking.arrival}<br>
- Vertrek: ${d.booking.departure}<br>
- Referentie: ${d.booking.reference}`;
- document.getElementById('route').innerHTML=d.route.map(x=>'<li>'+x+'</li>').join('');
- document.getElementById('rests').innerHTML=d.favorites.restaurants.map(x=>'<li>'+x+'</li>').join('');
- document.getElementById('beaches').innerHTML=d.favorites.beaches.map(x=>'<li>'+x+'</li>').join('');
- const names=["Receptie","Zwembad","Restaurant","Supermarkt","Sanitair","Sport","Speeltuin","Jullie plaats"];
- const map=document.getElementById('map');
- names.forEach((n,i)=>{
-   const div=document.createElement('div');
-   div.className='tile'+(i===7?' active':'');
-   div.textContent=n;
-   map.appendChild(div);
- });
+ const d=await (await fetch('assets/data/data.json')).json();
+ route.innerHTML=d.route.map(x=>'<li>'+x+'</li>').join('');
+ docs.innerHTML=d.docs.map(x=>'<li>'+x+'</li>').join('');
+ weather.innerHTML=d.weather.map(x=>'<li>'+x+'</li>').join('');
+ days.innerHTML=d.days.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td></tr>`).join('');
 }
 window.onload=init;

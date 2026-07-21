@@ -1,37 +1,52 @@
 {
+  "route": [
+    "Nederland",
+    "La Jonquera (hotel)",
+    "Camping Playa Montroig"
+  ],
+  "docs": [
+    "Campingreservering",
+    "Hotelreservering",
+    "Verzekering",
+    "Caravanpapieren"
+  ],
+  "weather": [
+    "02 aug ☀️ 29°C",
+    "03 aug ☀️ 30°C",
+    "04 aug ⛅ 29°C (voorbeeld)"
+  ],
   "days": [
-    {
-      "title": "Dag 1",
-      "tasks": [
-        "Aankomst",
-        "Caravan opzetten",
-        "Boodschappen"
-      ]
-    },
-    {
-      "title": "Dag 2",
-      "tasks": [
-        "Zwembad",
-        "Strand",
-        "Restaurant"
-      ]
-    },
-    {
-      "title": "Dag 3",
-      "tasks": [
-        "Barcelona dagtrip"
-      ]
-    }
-  ],
-  "restaurants": [
-    "Can Salvador",
-    "Friends",
-    "Casa Pepita"
-  ],
-  "pois": [
-    "PortAventura",
-    "Tarragona",
-    "Cambrils",
-    "Playa Cristal"
+    [
+      "02 aug",
+      "Aankomst"
+    ],
+    [
+      "03 aug",
+      "Camping verkennen"
+    ],
+    [
+      "04 aug",
+      "Strand"
+    ],
+    [
+      "05 aug",
+      "Cambrils"
+    ],
+    [
+      "06 aug",
+      "Tarragona"
+    ],
+    [
+      "07 aug",
+      "Rustdag"
+    ],
+    [
+      "08 aug",
+      "PortAventura"
+    ],
+    [
+      "09 aug",
+      "Barcelona"
+    ]
   ]
 }
