@@ -1,38 +1,78 @@
-<!doctype html><html lang='nl'><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas v102</title>
-<link rel='stylesheet' href='css/style.css'>
-</head><body>
-<header><h1>🏕️ ReisKompas v102</h1><p>Camping Navigator 2.0 (prototype)</p></header>
+<!doctype html><html lang="nl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ReisKompas 2.0</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><h1>🏕️ ReisKompas 2.0</h1><p>Vakantie Spanje 2026</p></header>
 
-<div class="layout">
-<div class="panel">
-<h2>Navigator</h2>
-<label>Kampeerplaats</label>
-<input id="plaats" placeholder="Bijv. 145">
-<button onclick="savePlace()">Opslaan</button>
+<nav id="tabs">
+<button data-p="dashboard">Dashboard</button>
+<button data-p="route">Route</button>
+<button data-p="planning">Planning</button>
+<button data-p="camping">Camping</button>
+<button data-p="restaurants">Restaurants</button>
+<button data-p="docs">Documenten</button>
+</nav>
 
-<h3>Hotspots</h3>
-<div class="hotspots">
-<button onclick="setDest('Receptie')">📍 Receptie</button>
-<button onclick="setDest('Garden Pool')">🏊 Garden Pool</button>
-<button onclick="setDest('Splash Pool')">💦 Splash Pool</button>
-<button onclick="setDest('Supermarkt')">🛒 Supermarkt</button>
-<button onclick="setDest('Restaurant')">🍽️ Restaurant</button>
-<button onclick="setDest('Strand')">🏖️ Strand</button>
+<main>
+<section id="dashboard" class="page">
+<h2>Dashboard</h2>
+<div class="card">
+<p><b>Reis:</b> 2 t/m 16 augustus 2026</p>
+<p id="countdown"></p>
 </div>
+</section>
 
-<div class="status">
-<p><b>Kampeerplaats:</b> <span id="saved">Nog niet ingesteld</span></p>
-<p><b>Bestemming:</b> <span id="dest">Nog geen</span></p>
+<section id="route" class="page" hidden>
+<h2>Route</h2>
+<div class="card">
+<ul>
+<li>Dag 1: België → La Jonquera</li>
+<li>Dag 2: La Jonquera → Playa Montroig</li>
+<li>Terugreis volgens dezelfde opzet</li>
+</ul>
 </div>
-</div>
+</section>
 
-<div class="viewer">
-<iframe src="docs/Campingkaart_HD.pdf"></iframe>
-<p class="note">Prototype: de kaart wordt nog als PDF weergegeven. Voor echte pinch-to-zoom en klikbare hotspots is een hoge resolutie afbeelding of vectorbestand de volgende stap.</p>
-</div>
-</div>
+<section id="planning" class="page" hidden>
+<h2>14-daagse planning</h2>
+<div class="card"><textarea style="width:100%;height:220px" placeholder="Notities per dag..."></textarea></div>
+</section>
 
+<section id="camping" class="page" hidden>
+<h2>Camping</h2>
+<div class="card">
+<p>Kampeerplaats: <input id="place" placeholder="Nog onbekend"> <button id="savePlace">Opslaan</button></p>
+<ul>
+<li>🏊 Garden Pool</li>
+<li>💦 Splash Pool</li>
+<li>🍽️ Restaurants</li>
+<li>🏖️ Strand</li>
+<li>🛒 Supermarkt</li>
+</ul>
+<p><b>Opmerking:</b> De interactieve kaart wordt toegevoegd zodra een hogere resolutie kaartafbeelding beschikbaar is.</p>
+</div>
+</section>
+
+<section id="restaurants" class="page" hidden>
+<h2>Restaurants</h2>
+<div class="card">
+<ul>
+<li>La Terrassa</li>
+<li>Espai Grill</li>
+<li>Tropical</li>
+<li>Pai-Pai Cocktail Bar</li>
+</ul>
+</div>
+</section>
+
+<section id="docs" class="page" hidden>
+<h2>Documenten</h2>
+<div class="card">
+<p>✔ Campingreservering</p>
+<p>✔ Campingplattegrond</p>
+<p>Voeg hier later PDF's toe aan de map <code>docs/</code>.</p>
+</div>
+</section>
+</main>
 <script src="js/app.js"></script>
 </body></html>
