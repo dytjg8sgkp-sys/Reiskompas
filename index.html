@@ -1,55 +1,33 @@
-<!doctype html>
-<html lang='nl'>
-<head>
-<meta charset='utf-8'>
-<meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>ReisKompas v100</title>
-<link rel='stylesheet' href='css/style.css'>
-</head>
-<body>
-<header>
-<h1>🏕️ ReisKompas v100</h1>
-<p>Mijlpaalversie</p>
-</header>
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>ReisKompas v101</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><h1>🏕️ ReisKompas v101</h1><p>Interactieve kaart – prototype</p></header>
 
-<div class="grid">
-<div class="card">
-<h2>🗺️ Interactieve kaart (voorbereiding)</h2>
-<p>De HD-campingkaart vormt nu de basis voor de interactieve kaart.</p>
-<a class="btn" href="docs/Campingkaart_HD.pdf" target="_blank">Open HD-kaart</a>
+<div class="toolbar">
+<button data-loc="Receptie">Receptie</button>
+<button data-loc="Garden Pool">Garden Pool</button>
+<button data-loc="Splash Pool">Splash Pool</button>
+<button data-loc="Restaurant">Restaurant</button>
+<button data-loc="Strand">Strand</button>
+</div>
+
+<div class="viewer">
+<iframe src="docs/Campingkaart_HD.pdf" title="Campingkaart"></iframe>
 </div>
 
 <div class="card">
-<h2>📍 Hotspots</h2>
+<h2>📍 Geselecteerde locatie</h2>
+<p id="selected">Nog geen locatie gekozen.</p>
+</div>
+
+<div class="card">
+<h2>📝 Ontwikkelstatus</h2>
 <ul>
-<li>Receptie</li>
-<li>Garden Pool</li>
-<li>Splash Pool</li>
-<li>Restaurants</li>
-<li>Supermarkt</li>
-<li>Sportcentrum</li>
-<li>Strand</li>
-<li>Sanitair</li>
+<li>✔ HD-kaart geïntegreerd</li>
+<li>✔ Locatieselectie voorbereid</li>
+<li>⏳ Echte klikbare hotspots volgen zodra een afbeelding/vectorkaart beschikbaar is.</li>
 </ul>
-</div>
-
-<div class="card">
-<h2>⭐ Eigen kampeerplaats</h2>
-<input id="place" placeholder="Bijv. 145">
-<button onclick="save()">Opslaan</button>
-<p id="status"></p>
-</div>
-
-<div class="card">
-<h2>🚀 Roadmap v101+</h2>
-<ul>
-<li>Zoom & pan op de kaart</li>
-<li>Klikbare hotspots</li>
-<li>Wandelroutes</li>
-<li>Offline kaartcache</li>
-<li>Navigatie vanaf eigen plaats</li>
-</ul>
-</div>
 </div>
 
 <script src="js/app.js"></script>
