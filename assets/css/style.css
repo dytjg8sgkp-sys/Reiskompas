@@ -1,11 +1,5 @@
-
-:root{--c:#0f766e;--bg:#edf4f6}
-*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:#1f3344;padding-bottom:90px}
-.hero{background:linear-gradient(135deg,#0f766e,#19b7a8);padding:50px 24px;color:#fff}
-.hero h1{margin:0}.count{display:inline-block;background:#fff;color:var(--c);padding:10px 16px;border-radius:999px;margin-top:16px;font-weight:700}
-.wrap{padding:20px}.panel{background:#fff;border-radius:20px;padding:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);margin-bottom:18px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.tile{display:block;background:#fff;border-radius:18px;padding:18px;text-decoration:none;color:inherit;box-shadow:0 8px 20px rgba(0,0,0,.08)}
-.icon{font-size:2rem}.muted{color:#6b7280}
-.bottom{position:fixed;left:12px;right:12px;bottom:12px;background:#fff;border-radius:18px;padding:14px;display:flex;justify-content:space-around;box-shadow:0 8px 20px rgba(0,0,0,.15)}
-.bottom a{text-decoration:none;color:var(--c)}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#fff}
+header{padding:30px;background:linear-gradient(135deg,#2563eb,#06b6d4)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;padding:20px}
+.card{display:block;text-decoration:none;color:#fff;background:#1e293b;padding:20px;border-radius:16px}
+nav{position:fixed;bottom:0;left:0;right:0;background:#111827;padding:10px;text-align:center}

@@ -1,44 +1,12 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ReisKompas v1</title>
-<style>
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:white}
-header{padding:40px 20px;background:linear-gradient(135deg,#2563eb,#0ea5e9)}
-h1{margin:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;padding:20px}
-.card{background:#1e293b;border-radius:16px;padding:20px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-footer{position:fixed;bottom:0;left:0;right:0;background:#111827;padding:12px;text-align:center}
-.count{font-size:1.2em;font-weight:bold}
-</style>
-</head>
-<body>
-<header>
-<h1>🇪🇸 ReisKompas</h1>
-<p>Vakantie Spanje 2026</p>
-<div class="count" id="countdown"></div>
-</header>
-<div class="grid">
-<div class="card">🚗 Reis</div>
-<div class="card">🏕️ Camping</div>
-<div class="card">🗺️ Dagtrips</div>
-<div class="card">🍽️ Restaurants</div>
-<div class="card">🏖️ Stranden</div>
-<div class="card">🎢 Activiteiten</div>
-<div class="card">✅ Checklist</div>
-<div class="card">❤️ Favorieten</div>
-</div>
-<footer>ReisKompas v1 - Start van de definitieve app</footer>
-<script>
-const vertrek=new Date("2026-07-01T08:00:00");
-function update(){
- const now=new Date();
- const d=Math.max(0,Math.floor((vertrek-now)/86400000));
- document.getElementById("countdown").textContent="Nog "+d+" dagen tot vertrek";
-}
-update();
-</script>
-</body>
-</html>
+<!doctype html><html lang='nl'><head>
+<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<link rel='stylesheet' href='assets/css/style.css'><title>ReisKompas v2</title></head>
+<body><header><h1>🇪🇸 ReisKompas v2</h1><div id='count'></div></header>
+<div class='grid'><a class="card" href="pages/reis.html">🚗 Reis</a>
+<a class="card" href="pages/camping.html">🏕️ Camping</a>
+<a class="card" href="pages/dagtrips.html">🗺️ Dagtrips</a>
+<a class="card" href="pages/restaurants.html">🍽️ Restaurants</a>
+<a class="card" href="pages/checklist.html">✅ Checklist</a>
+<a class="card" href="pages/favorieten.html">❤️ Favorieten</a></div>
+<nav>Dashboard</nav>
+<script src='assets/js/app.js'></script></body></html>
