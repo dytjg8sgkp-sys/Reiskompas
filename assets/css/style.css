@@ -1,5 +1,10 @@
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#fff}
-header{padding:30px;background:linear-gradient(135deg,#2563eb,#06b6d4)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;padding:20px}
-.card{display:block;text-decoration:none;color:#fff;background:#1e293b;padding:20px;border-radius:16px}
-nav{position:fixed;bottom:0;left:0;right:0;background:#111827;padding:10px;text-align:center}
+
+:root{--bg:#0f172a;--card:#1e293b;--accent:#0ea5e9;--text:#fff}
+body{margin:0;font-family:-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
+header{padding:28px;background:linear-gradient(135deg,#2563eb,#06b6d4)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;padding:18px}
+.card{background:var(--card);padding:18px;border-radius:16px;color:#fff;text-decoration:none}
+.bottom{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-around;background:#111827;padding:12px}
+.bottom a{color:#fff;text-decoration:none}
+button{background:var(--accent);border:0;padding:10px 14px;border-radius:10px;color:#fff}
+main{padding:20px 20px 70px}
