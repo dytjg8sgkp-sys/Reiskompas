@@ -1,8 +1,22 @@
 [
   {
-    "naam": "Can Solé"
+    "naam": "Casa Macarrilla 1966",
+    "plaats": "Cambrils",
+    "keuken": "Spaans"
   },
   {
-    "naam": "Casa Macarrilla 1966"
+    "naam": "Can Solé",
+    "plaats": "Cambrils",
+    "keuken": "Vis"
+  },
+  {
+    "naam": "L'Original",
+    "plaats": "Salou",
+    "keuken": "Tapas"
+  },
+  {
+    "naam": "El Terrat",
+    "plaats": "Tarragona",
+    "keuken": "Mediterraan"
   }
 ]
