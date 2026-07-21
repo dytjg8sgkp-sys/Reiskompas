@@ -1,7 +1,7 @@
-
-body{margin:0;font-family:system-ui;background:#eef3f7}
+body{margin:0;font-family:system-ui;background:#eef3f8}
 header{background:#1565c0;color:#fff;padding:1rem}
 nav{display:flex;background:#fff}
-nav button{flex:1;padding:.9rem;border:0;background:#fff}
+nav button{flex:1;padding:1rem;border:0}
 .card{background:#fff;margin:1rem;padding:1rem;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.15)}
-a{display:inline-block;margin-top:.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:1rem}
+.btn{display:inline-block;padding:.7rem 1rem;background:#1565c0;color:#fff;text-decoration:none;border-radius:8px}
